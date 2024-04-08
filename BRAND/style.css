@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+body {
+  max-width: 1600px;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+}
+
+.center {
+  padding-left: calc(50% - 570px);
+  padding-right: calc(50% - 570px);
+}
+
+.heading {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.heading__left {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.heading__logoname {
+  font-size: 27px;
+  line-height: 32px;
+  font-weight: 300;
+  color: #222;
+  padding: 45px 0 36px 13px;
+}
+.heading__logoname-letter {
+  font-weight: 900;
+  color: #f16d7f;
+}
+.heading__browse-summery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 32px;
+  font-weight: 300;
+  color: #222;
+  gap: 11px;
+  width: 87px;
+  height: 38px;
+  background-color: #cdcdcc;
+  background-image: linear-gradient(180deg, #f9f9f9 0%, #f5f5f5 100%);
+  border: 1px solid #e6e6e6;
+  border-radius: 3px 0px 0px 3px;
+  margin-left: 37px;
+}
+.heading #search {
+  width: 317px;
+  height: 38px;
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+  padding: 0px 16px;
+  font-family: "Lato";
+  font-size: 14px;
+  line-height: 32px;
+  font-weight: 300;
+  color: #a4a4a4;
+  outline: none;
+}
+.heading__search-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height: 38px;
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 0px 3px 3px 0px;
+}
+.heading__right {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.heading__account-summery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 38px;
+  background-color: #f16d7f;
+  font-size: 15px;
+  line-height: 32px;
+  font-weight: 400;
+  color: #fff;
+  gap: 8px;
+  margin-left: 26px;
+}
+
+.top {
+  height: 51px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 55px;
+}
+.top__link {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #222;
+}
+.top__content {
+  height: 600px;
+  background: url(img/main_image.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.top__text {
+  padding-top: 224px;
+}
+.top__text-item1 {
+  border-left: 12px solid #f16d7f;
+  line-height: 50px;
+  font-size: 40px;
+  font-weight: 900;
+  letter-spacing: 0.025em;
+  color: #222;
+  padding-left: 12px;
+}
+.top__text-item2 {
+  font-size: 60px;
+  padding-top: 20%;
+}
+.top__text-item3 {
+  color: #f16d7f;
+}
+
+.collection {
+  height: 823px;
+  margin-top: 98px;
+  margin-bottom: 100px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.collection__men {
+  background-image: url(img/men.jpg);
+  width: 560px;
+  height: 542px;
+}
+.collection__men-deal {
+  margin-top: 26px;
+  width: 157px;
+  height: 82px;
+  background-color: #fff;
+  font-size: 30px;
+  color: #f16d7f;
+  line-height: 1.2;
+  font-weight: 900;
+  letter-spacing: 0.025em;
+  padding-left: 18px;
+}
+.collection__men-offer, .collection__women-offer, .collection__accesories-offer, .collection__kids-offer {
+  font-size: 18px;
+  color: #222;
+}
+.collection__women {
+  background-image: url(img/women.jpg);
+  width: 560px;
+  height: 261px;
+}
+.collection__women-deal {
+  margin-top: 26px;
+  width: 144px;
+  height: 82px;
+  background-color: #fff;
+  font-size: 30px;
+  color: #f16d7f;
+  line-height: 1.2;
+  font-weight: 900;
+  letter-spacing: 0.025em;
+  padding-left: 18px;
+}
+.collection__accesories {
+  background-image: url(img/accesories.jpg);
+  width: 560px;
+  height: 261px;
+}
+.collection__accesories-deal {
+  margin-top: 26px;
+  width: 207px;
+  height: 82px;
+  background-color: #fff;
+  font-size: 30px;
+  color: #f16d7f;
+  line-height: 1.2;
+  font-weight: 900;
+  letter-spacing: 0.025em;
+  padding-left: 18px;
+}
+.collection__kids {
+  background-image: url(img/kids.jpg);
+  width: 560px;
+  height: 542px;
+}
+.collection__kids-deal {
+  margin-top: 26px;
+  width: 162px;
+  height: 82px;
+  background-color: #fff;
+  font-size: 30px;
+  color: #f16d7f;
+  line-height: 1.2;
+  font-weight: 900;
+  letter-spacing: 0.025em;
+  padding-left: 18px;
+}
+.collection__men, .collection__women, .collection__accesories, .collection__kids:hover {
+  cursor: pointer;
+  transform: scale1(1.5);
+}/*# sourceMappingURL=style.css.map */

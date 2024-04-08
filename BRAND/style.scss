@@ -1,0 +1,255 @@
+@import 'vars';
+@import 'mixins';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+body {
+    max-width: 1600px;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+}
+
+.center {
+    padding-left: calc(50% - 570px);
+    padding-right: calc(50% - 570px);
+}
+
+.heading {
+    height: 100px;
+    @include flex(flex, space-between, center);
+
+    &__left {
+        @include flex(flex, start, center);
+    }
+
+    &__logoname {
+        font-size: 27px;
+        line-height: 32px;
+        font-weight: 300;
+        color: $colorText;
+        padding: 45px 0 36px 13px;
+    }
+
+    &__logoname-letter {
+        font-weight: 900;
+        color: $siteColor;
+    }
+
+    &__browse-summery {
+        @include flex(flex, center, center);
+        font-size: 14px;
+        line-height: 32px;
+        font-weight: 300;
+        color: $colorText;
+        gap: 11px;
+        width: 87px;
+        height: 38px;
+        background-color: #cdcdcc;
+        background-image: linear-gradient(180.0deg, #f9f9f9 0%, #f5f5f5 100%);
+        border: 1px solid #e6e6e6;
+        border-radius: 3px 0px 0px 3px;
+        margin-left: 37px;
+    }
+
+    #search {
+        width: 317px;
+        height: 38px;
+        background-color: $bgColor;
+        border: 1px solid #e6e6e6;
+        padding: 0px 16px;
+        font-family: 'Lato';
+        font-size: 14px;
+        line-height: 32px;
+        font-weight: 300;
+        color: #a4a4a4;
+        outline: none;
+    }
+
+    &__search-img {
+        @include flex(flex, center, center);
+        width: 38px;
+        height: 38px;
+        background-color: $bgColor;
+        border: 1px solid #e6e6e6;
+        border-radius: 0px 3px 3px 0px;
+
+    }
+
+    &__right {
+        @include flex(flex, end, center);
+    }
+
+    &__account-summery {
+        @include flex(flex, center, center);
+        width: 130px;
+        height: 38px;
+        background-color: $siteColor;
+        font-size: 15px;
+        line-height: 32px;
+        font-weight: 400;
+        color: $bgColor;
+        gap: 8px;
+        margin-left: 26px;
+    }
+}
+
+.top {
+    height: 51px;
+    background-color: $bgColor;
+    @include flex(flex, center, center);
+    gap: 55px;
+
+    &__link {
+        font-size: 14px;
+        line-height: 26px;
+        font-weight: 700;
+        color: $colorText;
+    }
+
+    &__content {
+        height: 600px;
+        background: url(img/main_image.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+
+    }
+
+    &__text {
+        padding-top: 224px;
+    }
+
+    &__text-item1 {
+        border-left: 12px solid $siteColor;
+        line-height: 50px;
+        @include fontSize(40px);
+        font-weight: 900;
+        letter-spacing: 0.025em;
+        color: $colorText;
+        padding-left: 12px;
+    }
+
+    &__text-item2 {
+        @include fontSize(60px);
+        padding-top: 20%;
+    }
+
+    &__text-item3 {
+        color: $siteColor;
+    }
+}
+
+.collection {
+    height: 823px;
+    margin-top: 98px;
+    margin-bottom: 100px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    &__men {
+        background-image: url(img/men.jpg);
+        width: 560px;
+        height: 542px;
+    }
+
+    &__men-deal {
+        margin-top: 26px;
+        width: 157px;
+        height: 82px;
+        background-color: $bgColor;
+        font-size: 30px;
+        color: $siteColor;
+        line-height: 1.2;
+        font-weight: 900;
+        letter-spacing: 0.025em;
+        padding-left: 18px;
+    }
+
+    &__men-offer,
+    &__women-offer,
+    &__accesories-offer,
+    &__kids-offer {
+        font-size: 18px;
+        color: $colorText;
+    }
+
+    &__women {
+        background-image: url(img/women.jpg);
+        width: 560px;
+        height: 261px;
+    }
+
+    &__women-deal {
+        margin-top: 26px;
+        width: 144px;
+        height: 82px;
+        background-color: $bgColor;
+        font-size: 30px;
+        color: $siteColor;
+        line-height: 1.2;
+        font-weight: 900;
+        letter-spacing: 0.025em;
+        padding-left: 18px;
+    }
+
+    &__accesories {
+        background-image: url(img/accesories.jpg);
+        width: 560px;
+        height: 261px;
+    }
+
+    &__accesories-deal {
+        margin-top: 26px;
+        width: 207px;
+        height: 82px;
+        background-color: $bgColor;
+        font-size: 30px;
+        color: $siteColor;
+        line-height: 1.2;
+        font-weight: 900;
+        letter-spacing: 0.025em;
+        padding-left: 18px;
+    }
+
+    &__kids {
+        background-image: url(img/kids.jpg);
+        width: 560px;
+        height: 542px;
+    }
+
+    &__kids-deal {
+        margin-top: 26px;
+        width: 162px;
+        height: 82px;
+        background-color: $bgColor;
+        font-size: 30px;
+        color: $siteColor;
+        line-height: 1.2;
+        font-weight: 900;
+        letter-spacing: 0.025em;
+        padding-left: 18px;
+    }
+
+    &__men,
+    &__women,
+    &__accesories,
+    &__kids:hover {
+        cursor: pointer;
+        transform: scale1(1.5);
+    }
+
+
+
+
+
+
+}
