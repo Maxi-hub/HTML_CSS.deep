@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,10 +10,11 @@
     <link rel="stylesheet" href="style.css">
     <title>Single Page</title>
 </head>
+
 <body>
     <div class="header">
         <div class="heading center">
-            <div class="heading__left center">
+            <div class="heading__left">
                 <div class="heading__logo">
                     <a href="#"><img src="img/logo1.jpg" alt="Logo"></a>
                 </div>
@@ -21,7 +23,7 @@
                     </p>
                 </div>
                 <div class="heading__browse">
-                    <details>
+                    <details class="heading__details">
                         <summary class="heading__browse-summery">
                             Browse<img class="heading__browse-img" src="img/arrow_grey_down.png" alt="">
                         </summary>
@@ -46,18 +48,15 @@
                                 <a href="#" class="heading__browse-item">Sweatshirts/Hoodies</a>
                                 <a href="#" class="heading__browse-item">Blazers</a>
                                 <a href="#" class="heading__browse-item">Jackets/vests</a>
-
                             </div>
-
                         </div>
-
                     </details>
                 </div>
                 <input id="search" type="text" class="text_area" placeholder="Search for Item...">
                 <label class="heading__search-box" for="search"><img class="heading__search-img" src="img/search.png"
                         alt="search"></label>
             </div>
-            <div class="heading__right center">
+            <div class="heading__right">
                 <div class="heading__bucket">
                     <a href="#"><img class="heading__bucket-img" src="img/bucket_black.png" alt=""></a>
                     <div class="heading__bucket-box">
@@ -88,11 +87,14 @@
                     </div>
                 </div>
                 <div class="heading__account">
-                    <details>
+                    <details class="heading__account-details">
                         <summary class="heading__account-summery">
                             My Account<img src="img/arrow_white.png">
                         </summary>
-                        Lorem ipsum, dolor.
+                        <p class="heading__account-text">Lorem ipsum, dolor. Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Nulla, mollitia deleniti delectus nostrum ea, assumenda eius magnam
+                            aperiam impedit labore reprehenderit, cupiditate minus? Obcaecati odit explicabo nostrum
+                            delectus, doloribus eos?</p>
                     </details>
                 </div>
             </div>
@@ -100,7 +102,40 @@
         <nav>
             <div class="top center">
                 <ul class="top__menu">
-                    <li class="top__list"><a href="#" class="top__link">Home</a></li>
+                    <li class="top__list"><a href="#" class="top__link">Home</a>
+                        <div class="top__box">
+                            <div class="top__item">
+                                <h3 class="top__title">Home</h3>
+                                <a href="#" class="top__title-link">Dresses</a>
+                                <a href="#" class="top__title-link">Tops</a>
+                                <a href="#" class="top__title-link">Sweaters/Knits</a>
+                                <a href="#" class="top__title-link">Jackets/Coats</a>
+                                <a href="#" class="top__title-link">Blazers</a>
+                                <a href="#" class="top__title-link">Denim</a>
+                                <a href="#" class="top__title-link">Leggings/Pants</a>
+                                <a href="#" class="top__title-link">Skirts/Shorts</a>
+                                <a href="#" class="top__title-link">Accessories </a>
+                            </div>
+                            <div class="top__item">
+                                <h3 class="top__title">Home</h3>
+                                <a href="#" class="top__title-link">Dresses</a>
+                                <a href="#" class="top__title-link">Tops</a>
+                                <a href="#" class="top__title-link">Sweaters/Knits</a>
+                                <a href="#" class="top__title-link">Jackets/Coats</a>
+                                <a href="#" class="top__title-link">Blazers</a>
+                                <a href="#" class="top__title-link">Denim</a>
+                                <a href="#" class="top__title-link">Leggings/Pants</a>
+                                <a href="#" class="top__title-link">Skirts/Shorts</a>
+                                <a href="#" class="top__title-link">Accessories </a>
+                            </div>
+                            <div class="top__item">
+                                <h3 class="top__title">Home</h3>
+                                <a href="#" class="top__title-link">Dresses</a>
+                                <a href="#" class="top__title-link">Tops</a>
+                                <a href="#" class="top__title-link">Sweaters/Knits</a>
+                            </div>
+                        </div>
+                    </li>
                     <li class="top__list"><a href="#" class="top__link">Man</a>
                         <div class="top__box">
                             <div class="top__item">
@@ -223,7 +258,33 @@
                             </div>
                         </div>
                     </li>
-                    <li class="top__list"><a href="#" class="top__link">Accoseriese</a></li>
+                    <li class="top__list"><a href="#" class="top__link">Accoseriese</a>
+                        <div class="top__box">
+                            <div class="top__item">
+                                <h3 class="top__title">Accoseriese</h3>
+                                <a href="#" class="top__title-link">Dresses</a>
+                                <a href="#" class="top__title-link">Tops</a>
+                                <a href="#" class="top__title-link">Sweaters/Knits</a>
+                                <a href="#" class="top__title-link">Jackets/Coats</a>
+                                <a href="#" class="top__title-link">Blazers</a>
+                                <a href="#" class="top__title-link">Denim</a>
+                            </div>
+                            <div class="top__item">
+                                <h3 class="top__title">Accoseriese</h3>
+                                <a href="#" class="top__title-link">Dresses</a>
+                                <a href="#" class="top__title-link">Tops</a>
+                                <a href="#" class="top__title-link">Sweaters/Knits</a>
+                                <a href="#" class="top__title-link">Jackets/Coats</a>
+                                <a href="#" class="top__title-link">Blazers</a>
+                            </div>
+                            <div class="top__item">
+                                <h3 class="top__title">Accoseriese</h3>
+                                <a href="#" class="top__title-link">Dresses</a>
+                                <a href="#" class="top__title-link">Tops</a>
+                                <a href="#" class="top__title-link">Sweaters/Knits</a>
+                            </div>
+                        </div>
+                    </li>
                     <li class="top__list last"><a href="#" class="top__link">Featured</a>
                         <div class="top__box">
                             <div class="top__item">
@@ -320,15 +381,227 @@
             </div>
         </nav>
     </div>
-    <div class="new-arrivals">
+    <div class="new-arrivals center">
         <h1 class="new-arrivals__title">New Arrivals</h1>
-        <div class="new-arrivals__list">
-            <ul>
-                <li class="">Home /</li>
-                <li class="">Men /</li>
-                <li class="">New Arrivals</li>
-            </ul>
+        <nav class="new-arrivals__box">
+            <a class="new-arrivals__link" href="#">Home /</a>
+            <a class="new-arrivals__link" href="#">Men /</a>
+            <a class="new-arrivals__link" href="#">New Arrivals</a>
+        </nav>
+    </div>
+    <div class="fotos">
+        <div class="fotos__arrow">
+            <a href="#"><img class="fotos__img1" src="img/arrow_whiteleft.png" alt=""></a>
+        </div>
+        <img class="fotos__img2" src="img/woman_on_chair.png" alt="Woman on chair">
+        <div class="fotos__arrow">
+            <a href="#">
+                <img class="fotos__img3" src="img/arrow_whiteright.png" alt="">
+            </a>
+        </div>
+        <div class="fotos__box">
+            <div class="fotos__description">
+                <h3 class="fotos__h3">WOMEN COLLECTION</h3>
+                <hr>
+                <h1 class="fotos__h1">Moschino Cheap And Chic</h1>
+                <p class="fotos__text">Compellingly actualize fully researched processes before proactive outsourcing.
+                    Progressively syndicate collaborative architectures before cutting-edge services. Completely
+                    visualize parallel core competencies rather than exceptional portals.</p>
+                <div class="fotos__material">
+                    <p>MATERIAL: &nbsp;<span class="fotos__material-text">COTTON</span></p>
+                    <p>DESIGNER: &nbsp;<span class="fotos__material-text">BINBURHAN</span></p>
+                </div>
+                <p class="fotos__price">$561</p>
+                <div class="filter">
+                    <div class="filter-color">
+                        <p class="filter__title">CHOOSE COLOR</p>
+                        <details class="filter__color">
+                            <summary class="filter__sort">
+                                <div class="filter__color-square1"></div>
+                                Red
+                                <img class="filter__color-arrow" src="img/arrow_grey_down.png">
+                            </summary>
+                            <div class="filter__sort-box">
+                                <div class="filter__sort-check">
+                                    <input id="filter_check1" class="filter__sort-check1" type="checkbox">
+                                    <div class="filter__color-square2"></div>
+                                    <label class="filter__label" for="#">Green</label>
+                                </div>
+                                <div class="filter__sort-check">
+                                    <input id="filter_check2" class="filter__sort-check2" type="checkbox">
+                                    <div class="filter__color-square3"></div>
+                                    <label class="filter__label" for="#">Blue</label>
+                                </div>
+                            </div>
+                        </details>
+                    </div>
+                    <div class="filter-size">
+                        <p class="filter__title">CHOOSE SIZE</p>
+                        <details class="filter__size">
+                            <summary class="filter__sort sort__new"> XXL
+                                <img class="filter__color-arrow" src="img/arrow_grey_down.png">
+                            </summary>
+                            <div class="filter__sort-box">
+                                <div class="filter__sort-check">
+                                    <input class="filter__checkbox" type="checkbox">
+                                    <label class="filter__label" for="#">XS</label>
+                                </div>
+                                <div class="filter__sort-check">
+                                    <input class="filter__checkbox" type="checkbox">
+                                    <label class="filter__label" for="#">S</label>
+                                </div>
+                                <div class="filter__sort-check">
+                                    <input class="filter__checkbox" type="checkbox">
+                                    <label class="filter__label" for="#">M</label>
+                                </div>
+                                <div class="filter__sort-check">
+                                    <input class="filter__checkbox" type="checkbox">
+                                    <label class="filter__label" for="#">L</label>
+                                </div>
+                            </div>
+                        </details>
+                    </div>
+                    <div class="filter-quantity">
+                        <p class="filter__title">QUANTITY</p>
+                        <input class="filter__number" type="number" placeholder="Input number" style="outline:none;">
+                    </div>
+                </div>
+                <a href="#" class="fotos__button-bucket">
+                    <img class="fotos__button-img" src="img/bucket_white.png" alt="">
+                    <p class="fotos__button-text">Add to Cart</p>
+                </a>
+            </div>
         </div>
     </div>
+    <section class="single-page-items center">
+        <h1 class="single-page-items__title">you may like also</h1>
+        <div class="single-page-items__box">
+            <div class="single-page-items__item">
+                <div class="single-page-items__img">
+                    <img src="img/woman1.png" alt="">
+                </div>
+                <div class="single-page-items__text">
+                    <p class="single-page-items__name">BLAZE LEGGINGS</p>
+                    <p class="single-page-items__price">$52.00</p>
+                </div>
+            </div>
+            <div class="single-page-items__item">
+                <div class="single-page-items__img">
+                    <img src="img/woman2.png" alt="">
+                </div>
+                <div class="single-page-items__text">
+                    <p class="single-page-items__name">ALEXA SWEATER</p>
+                    <p class="single-page-items__price">$52.00</p>
+                </div>
+            </div>
+            <div class="single-page-items__item">
+                <div class="single-page-items__img">
+                    <img src="img/woman3.png" alt="">
+                </div>
+                <div class="single-page-items__text">
+                    <p class="single-page-items__name">AGNES TOP</p>
+                    <p class="single-page-items__price">$52.00</p>
+                </div>
+            </div>
+            <div class="single-page-items__item">
+                <div class="single-page-items__img">
+                    <img src="img/woman4.png" alt="">
+                </div>
+                <div class="single-page-items__text">
+                    <p class="single-page-items__name">SYLVA SWEATER</p>
+                    <p class="single-page-items__price">$52.00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="top-bottom">
+        <div class="top-bottom__reviews">
+            <div class="top-bottom__reviews-img"><img src="img/review.png" alt=""></div>
+            <div class="top-bottom__text">
+                <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam
+                    condimentum mattis neque sed pretium”</p>
+                <p class="top-bottom__person"><span class="top-bottom__name">Bin Burhan</span><br>Dhaka, Bd</p>
+                <div>
+                    <img class="top-bottom__scroll" src="img/line_white.png" alt="">
+                    <img class="top-bottom__scroll" src="img/line_pink.png" alt="">
+                    <img class="top-bottom__scroll" src="img/line_white.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="subscribe">
+            <p>Subscribe<span class="subscribe__text"><br>FOR OUR NEWLETTER AND PROMOTION</span></p>
+            <button class="subscribe__button">
+                <input type="text" name="email" id="email" placeholder="Enter Your Email">
+                <label class="subscribe__label" for="email">Subscribe</label>
+            </button>
+        </div>
+    </div>
+    <div class="middle-bottom center">
+        <div class="middle-bottom__about">
+            <div class="heading__logo">
+                <a href="#"><img src="img/logo1.jpg" alt="Logo"></a>
+            </div>
+            <div class="heading__logo-text">
+                <p class="heading__logoname">BRAN<span class="heading__logoname-letter">D</span>
+                </p>
+            </div>
+            <p class="middle-bottom__about-text">Objectively transition extensive data rather than cross functional
+                solutions. Monotonectally syndicate
+                multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of
+                processes and cross-unit partnerships.<br><br>
+                Efficiently plagiarize 24/365 action items and focused infomediaries.
+                Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.</p>
+        </div>
+        <nav class="middle-bottom__item">
+            <h3 class="middle-bottom__title">COMPANY</h3>
+            <ul>
+                <li class="middle-bottom__list"><a class="middle-bottom__link" href=#>Home</a></li>
+                <li class="middle-bottom__list"><a class="middle-bottom__link" href=#>Shop</a></li>
+                <li class="middle-bottom__list"><a class="middle-bottom__link" href=#>About</a></li>
+                <li class="middle-bottom__list"><a class="middle-bottom__link" href=#>How It Works</a></li>
+                <li class="middle-bottom__list"><a class="middle-bottom__link" href=#>Contact</a></li>
+            </ul>
+        </nav>
+        <nav class="middle-bottom__item">
+            <h3 class="middle-bottom__title">INFORMATION</h3>
+            <ul>
+                <li class="middle-bottom__list"><a class="middle-bottom__link" href=#>Tearms & Condition</a></li>
+                <li class="middle-bottom__list"><a class="middle-bottom__link" href=#>Privacy Policy</a></li>
+                <li class="middle-bottom__list"><a class="middle-bottom__link" href=#>How to Buy</a></li>
+                <li class="middle-bottom__list"><a class="middle-bottom__link" href=#>How to Sell</a></li>
+                <li class="middle-bottom__list"><a class="middle-bottom__link" href=#>Promotion</a></li>
+            </ul>
+        </nav>
+        <nav class="middle-bottom__item">
+            <h3 class="middle-bottom__title">SHOP CATEGORY</h3>
+            <ul>
+                <li class="middle-bottom__list"><a class="middle-bottom__link" href=#>Men</a></li>
+                <li class="middle-bottom__list"><a class="middle-bottom__link" href=#>Women</a></li>
+                <li class="middle-bottom__list"><a class="middle-bottom__link" href=#>Child</a></li>
+                <li class="middle-bottom__list"><a class="middle-bottom__link" href=#>Apparel</a></li>
+                <li class="middle-bottom__list"><a class="middle-bottom__link" href=#>Brows All</a></li>
+            </ul>
+        </nav>
+    </div>
+    <footer class="footer center">
+        <p class="footer__text"> &copy;2022 Brand All Rights Reserved.</p>
+        <div class="footer__social">
+            <div class="footer__icons"><a href="https://www.facebook.com/" target="_blank"><img
+                        class="footer__icons-img" src="img/Facebook.svg" alt=""></a>
+            </div>
+            <div class="footer__icons"><a href="https://www.twitter.com" target="_blank"><img class="footer__icons-img"
+                        src="img/twitter.svg" alt=""></a>
+            </div>
+            <div class="footer__icons"><a href="https://www.instagram.com" target="_blank"><img
+                        class="footer__icons-img" src="img/instagram.svg" alt=""></a>
+            </div>
+            <div class="footer__icons"><a href="https://ru.pinterest.com/" target="_blank"><img
+                        class="footer__icons-img" src="img/pinterest.svg" alt=""></a>
+            </div>
+            <div class="footer__icons"><a href="https://plus.google.com" target="_blank"><img class="footer__icons-img"
+                        width="22px" height="22px" src="img/google-plus.svg" alt=""></a></div>
+        </div>
+    </footer>
 </body>
+
 </html>
