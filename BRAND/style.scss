@@ -61,6 +61,7 @@ li {
         @include flex(flex, center, center);
         margin-left: 46px;
         margin-right: 62px;
+        z-index: 1;
     }
 
     &__details {
@@ -95,14 +96,16 @@ li {
 
     &__browse-box {
         display: block;
+        position: absolute;
         width: 262px;
         height: 530px;
         background: #ffffff;
         border-radius: 5px;
-        margin-top: 7px;
+        margin-top: 2px;
         padding-top: 15px;
         padding-left: 15px;
-        // border: 1px solid #000;
+        z-index: 0;
+        box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
     }
 
     &__browse-content {
@@ -630,12 +633,17 @@ li {
             background-color: rgba(255, 255, 255, 0.0);
             border: 1px solid $bgColor;
             @include flex(flex, flex-end, center);
+            box-shadow: 0 0 10px 0 white;
         }
     }
 
     &__items:hover &__items-img {
         cursor: pointer;
         filter: brightness(40%);
+    }
+
+    &__link {
+        display: block;
     }
 
 
@@ -1120,6 +1128,10 @@ li {
             color: #2f2f2f;
         }
 
+        &__size {
+            position: relative;
+        }
+
         &__sort {
             @include flex(flex, flex-start, center);
             width: 144px;
@@ -1169,7 +1181,8 @@ li {
 
         &__sort-box {
             background-color: $bgColor;
-            display: block;
+            position: absolute;
+            width: 172px;
         }
 
         &__label {
@@ -1260,21 +1273,28 @@ li {
         width: 263px;
         height: 364px;
         background-color: #fff;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+
+        &:hover {
+            box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
+        }
     }
 
     &__img {
-        @include flex(flex, center, center); 
+        @include flex(flex, center, center);
         width: 261px;
         height: 280px;
         background-color: #e9e9e9;
     }
 
+    &__img2 {
+        display: block;
+        margin-bottom: 20px;
+    }
+
     &__text {
         padding-top: 18px;
         padding-left: 14px;
+        text-align: start;
     }
 
     &__name {
