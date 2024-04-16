@@ -601,6 +601,17 @@ li {
         @include flex(flex, center, center);
         flex-wrap: wrap;
         gap: 31px;
+
+        &_position {
+            display: flex;
+            margin-right: 146px;
+            margin-top: 48px;
+            margin-bottom: 43px;
+            max-width: 846px;
+            gap: 31px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
     }
 
     &__items {
@@ -981,10 +992,24 @@ li {
         text-transform: uppercase;
         color: $siteColor;
     }
+}
 
-    &__box {}
+.breadcrumbs {
 
-    &__list {}
+    &__ul {
+        display: flex;
+    }
+
+    &__li:not(:last-child):after {
+        content: '/';
+        padding-left: 4px;
+        padding-right: 4px;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: #636363;
+    }
 
     &__link {
         font-size: 14px;
@@ -992,10 +1017,11 @@ li {
         font-weight: 300;
         text-transform: uppercase;
         color: #636363;
+    }
 
-        &:hover {
-            font-weight: 700;
-        }
+    &__li:last-child .breadcrumbs__link {
+        font-weight: 700;
+        color: $siteColor;
     }
 }
 
@@ -1312,6 +1338,293 @@ li {
         font-weight: 700;
         color: $siteColor;
         display: flex;
+    }
+
+}
+
+.filter-sort {
+    height: 132px;
+    padding-top: 39px;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    gap: $gapGrid;
+}
+
+.central {
+    display: flex;
+    gap: 50px;
+}
+
+.leftPosition {
+    float: left;
+}
+
+.filter {
+    padding-top: 13px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 10;
+
+    &__content {
+        // float: left;
+        background: $bgColor;
+        width: 243px;
+        margin-top: 59px;
+        // padding-left: calc(50% - 570px);
+    }
+
+    &[open] {
+        background: $bgColor;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    }
+
+    &[open] .filter__heading {
+        color: $siteColor;
+    }
+
+    &__summery {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+        padding-left: 16px;
+    }
+
+    &__heading {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: $colorText;
+    }
+
+    &__item {
+        margin-top: 16px;
+    }
+
+    &__item[open] .filter__head {
+        color: $siteColor;
+    }
+
+    &__head {
+        @include sortStyle;
+        padding: 8px 11px 11px;
+        border-bottom: 1px solid #bebebe;
+        border-left: 5px solid $siteColor;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__head::after {
+        content: '▼';
+    }
+
+    &__item[open] &__head::after {
+        content: '▲';
+    }
+
+    &__link {
+        @include sortStyle;
+    }
+
+    &__link:hover {
+        color: $siteColor;
+    }
+
+    &__link-box {
+        display: flex;
+        flex-direction: column;
+        padding: 24px 16px;
+        gap: 11px;
+    }
+}
+
+.rightPosition {
+    float: right;
+}
+
+.sort {
+    padding: 19px 0 0;
+    display: flex;
+    gap: 18px;
+    flex-direction: row;
+    margin: 60px 0 0;
+
+    &__details {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__heading {
+        @include sortStyle;
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        // background: $bgColorff;
+        /* box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21); */
+        padding: 18px 30px 40px 0;
+        width: 206px;
+    }
+
+    &__size-box {
+        width: 266px;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 18px 23px 0 0;
+    }
+
+    &__link {
+        border-right: 1px solid #dfdfdf;
+        padding: 0px 8px;
+        font-size: 14px;
+        line-height: 26px;
+        font-weight: 400;
+        color: #6f6e6e;
+        margin-bottom: 10px;
+    }
+
+    &__link:nth-child(3n) {
+        border-right: none;
+    }
+
+    &__check {
+        @include sortStyle;
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        width: 42px;
+        margin: 6px 23px 10px 0;
+    }
+
+    &__price {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 18px;
+        font-size: 14px;
+        line-height: 26px;
+        font-weight: 400;
+        color: #6f6e6e;
+    }
+
+    input[type=range] {
+        // -webkit-appearance: none; 
+        // appearance: none;
+        background-color: #f0f0f0;
+        accent-color: $siteColor;
+        width: 262px;
+        height: 6px;
+        cursor: pointer;
+    }
+}
+
+.sorting {
+    display: flex;
+    gap: 10px;
+    width: 846px;
+    height: 50px;
+    background-color: #f3f3f3;
+    margin-right: 145px;
+
+    &__name,
+    &__count {
+        padding: 5px;
+        display: flex;
+        margin: 10px;
+        font-size: 14px;
+        line-height: 26px;
+        font-weight: 400;
+        color: #6f6e6e;
+    }
+
+    &__title {
+        margin-right: 1px;
+        padding: 10px;
+        background-color: $bgColor;
+        @include flex(flex, center, center);
+    }
+
+    &__sort {
+        background-color: $bgColor;
+        @include flex(flex, space-between, center);
+        padding: 10px;
+        width: 64px;
+
+        &>p {
+            display: block;
+        }
+    }
+}
+
+.conditions {
+    @include flex(flex, center, center);
+    height: 341px;
+    background: rgb(34, 34, 36);
+    gap: 30px;
+
+    &__item {
+        width: 360px;
+        height: 134px;
+        text-align: center;
+    }
+
+    &__text {
+        color: rgb(251, 251, 251);
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 17px;
+        text-align: center;
+    }
+}
+
+.delivery_title {
+    margin-top: 28px;
+    @include conditionStyle;
+}
+
+.sales_title {
+    margin-top: 19px;
+    @include conditionStyle;
+}
+
+.assurance_title {
+    margin-top: 25px;
+    @include conditionStyle;
+}
+
+.flipping {
+    @include flex(flex, space-between, center);
+    margin-right: 145px;
+    margin-bottom: 110px;
+
+    &__number {
+        width: 261px;
+        background-color: $bgColor;
+        border: 1px solid #ebebeb;
+        border-radius: 3px;
+        @include flex(flex, space-between, center);
+        padding: 10px;
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 700;
+        color: #c4c4c4;
+    }
+
+    &__button {
+        width: 150px;
+        background-color: $bgColor;
+        border: 1px solid #ef5b70;
+        border-radius: 3px;
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 700;
+        color: #ef5b70;
+        padding: 10px;
+        @include flex(flex, center, center);
+
     }
 
 }
