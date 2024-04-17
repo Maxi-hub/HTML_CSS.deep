@@ -334,12 +334,16 @@ li {
         justify-content: center;
         gap: 7px;
 
-        :hover .top__box {
-            display: flex;
-        }
-
-        :hover .top__link {
+        :hover .top__list {
             color: $siteColor;
+        }
+    }
+
+    &__list {
+        position: relative;
+
+        &:hover .top__box {
+            display: flex;
         }
     }
 
@@ -349,7 +353,6 @@ li {
         font-weight: 700;
         color: $colorText;
         padding: 0 25px;
-        position: relative;
         text-transform: uppercase;
     }
 
@@ -359,12 +362,14 @@ li {
         border: 1px solid $borderColor;
         padding: 20px 20px 0 0;
         position: absolute;
+        top: 45px;
         display: none;
         // display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        height: 310px;
-        top: 136px;
+        // flex-direction: column;
+        // flex-wrap: wrap;
+        // max-height: 310px;
+
+
 
         &::before {
             content: "";
@@ -374,13 +379,12 @@ li {
             background-color: aqua;
             position: absolute;
             top: -8px;
-            left: 28px;
+            left: 35px;
             transform: rotate(45deg);
             background-color: $bgColor;
             border-left: 1px solid $borderColor;
             border-top: 1px solid $borderColor;
         }
-
     }
 
     &__item {
@@ -409,6 +413,10 @@ li {
         color: #646464;
     }
 
+    &__item-ibox {
+        position: relative;
+    }
+
     &__item-ibox:hover &__item-pro {
         color: $siteColor;
     }
@@ -417,7 +425,7 @@ li {
         width: 234px;
         height: 117px;
         margin-top: 15px;
-        position: relative;
+
     }
 
     &__item-pro {
@@ -428,8 +436,8 @@ li {
         letter-spacing: 0.025em;
         color: $bgColor;
         position: absolute;
-        bottom: 30px;
-        right: 30px;
+        bottom: 10px;
+        right: 10px;
     }
 
     &__content {
@@ -467,7 +475,12 @@ li {
 
 
 .last:hover .top__box {
-    right: 180px;
+    right: 0;
+    left: auto;
+}
+
+.last:hover .top__box::before {
+    right: 55px;
     left: auto;
 }
 
@@ -625,28 +638,13 @@ li {
             box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
         }
 
-        &:hover::after {
-            cursor: pointer;
-            position: absolute;
-            background: url(img/bucket_white.png) no-repeat left;
-            background-position: 10%;
-            content: 'Add to Cart';
-            color: $bgColor;
-            font-size: 13px;
-            line-height: 1.2;
-            font-weight: 700;
-            padding-right: 13px;
-            gap: 8px;
-            width: 110px;
-            height: 39px;
-            left: 26%;
-            top: 27%;
-            background-color: rgba(255, 255, 255, 0.0);
-            border: 1px solid $bgColor;
-            @include flex(flex, flex-end, center);
-            box-shadow: 0 0 10px 0 white;
+        &:hover .add-box{
+            display: flex;
         }
+
     }
+
+    
 
     &__items:hover &__items-img {
         cursor: pointer;
@@ -710,6 +708,38 @@ li {
         filter: invert(30%) sepia(69%) saturate(7889%) hue-rotate(329deg) brightness(89%) contrast(100%);
     }
 }
+
+.add-box {
+    position: absolute;
+    top: 98px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    pointer-events: none;
+    display: none;
+}
+
+.add {
+    display: flex;
+    padding: 10px;
+    font-size: 13px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: $bgColor;
+    border: 1px solid $bgColor;
+    align-items: center;
+    pointer-events: all;
+}
+
+.add-img {
+    margin-right: 10px;
+}
+
+.add:hover {
+    box-shadow: 0 0 10px 0 white;
+    color: $bgColor;
+}
+
 
 .offer {
     display: flex;
@@ -2000,7 +2030,7 @@ li {
             color: $bgColor;
         }
 
-        &_button:hover  {
+        &_button:hover {
             background-color: $bgColor;
             color: $siteColor;
         }
