@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Shopping Cart</title>
 </head>
 
 <body>
@@ -16,7 +16,7 @@
         <div class="heading center">
             <div class="heading__left">
                 <div class="heading__logo">
-                    <a href="#"><img src="img/logo1.jpg" alt="Logo"></a>
+                    <a href="index.html"><img src="img/logo1.jpg" alt="Logo"></a>
                 </div>
                 <div class="heading__logo-text">
                     <p class="heading__logoname">BRAN<span class="heading__logoname-letter">D</span>
@@ -87,7 +87,7 @@
                             <p>$500.00</p>
                         </div>
                         <a href="checkout.html" class="heading__checkout">Checkout</a>
-                        <a href="shopping_cart.html" class="heading__goToCart">Go to cart</a>
+                        <a href="#" class="heading__goToCart">Go to cart</a>
                     </div>
                 </div>
                 <div class="heading__account">
@@ -384,141 +384,103 @@
                 </ul>
             </div>
         </nav>
-        <div class="top__content">
-            <div class="top__text center">
-                <div class="top__text-item1"><span class="top__text-item2">THE BRAND</span><br>OF LUXERIOUS <span
-                        class="top__text-item3">FASHION</span></div>
+    </div>
+    <div class="new-arrivals center">
+        <h1 class="new-arrivals__title">New Arrivals</h1>
+        <nav class="breadcrumbs__box">
+            <ul class="breadcrumbs__ul">
+                <li class="breadcrumbs__li"><a class="breadcrumbs__link" href="../BRAND/index.html">Home</a></li>
+                <li class="breadcrumbs__li"> <a class="breadcrumbs__link" href="#">Men</a></li>
+                <li class="breadcrumbs__li"> <a class="breadcrumbs__link" href="#">New Arrivals</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="cart center">
+        <div class="title">
+            <p class="title__name">Product Details</p>
+            <div class="title__details">
+                <p class="title__name">unite Price</p>
+                <p class="title__name">Quantity</p>
+                <p class="title__name">shipping</p>
+                <p class="title__name">Subtotal</p>
+                <p class="title__name">ACTION</p>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product__left">
+                <img src="img/man1_cart.png" alt="">
+                <div class="product__details">
+                    <h4 class="product__title">Mango People T-shirt</h4>
+                    <p class="product__text">Color: <span>Red</span></p>
+                    <p class="product__text">Size: <span>Xll</span></p>
+                </div>
+            </div>
+            <div class="product__info">
+                <p class="product__text">$150</p>
+                <input class="product__quantity" type="number" name="quantity" id="quantity" min="1">
+                <p class="product__text">FREE</p>
+                <p class="product__text">$300</p>
+                <img src="img/button_close.png" alt="">
+            </div>
+        </div>
+        <div class="product">
+            <div class="product__left">
+                <img src="img/man2_cart.png" alt="">
+                <div class="product__details">
+                    <h4 class="product__title">Mango People T-shirt</h4>
+                    <p class="product__text">Color: <span>Red</span></p>
+                    <p class="product__text">Size: <span>Xll</span></p>
+                </div>
+            </div>
+            <div class="product__info">
+                <p class="product__text">$150</p>
+                <input class="product__quantity" type="number" name="quantity" id="quantity" min="1">
+                <p class="product__text">FREE</p>
+                <p class="product__text">$300</p>
+                <img src="img/button_close.png" alt="">
+            </div>
+        </div>
+        <div class="product">
+            <div class="product__left">
+                <img src="img/man3_cart.png" alt="">
+                <div class="product__details">
+                    <h4 class="product__title">Mango People T-shirt</h4>
+                    <p class="product__text">Color: <span>Red</span></p>
+                    <p class="product__text">Size: <span>Xll</span></p>
+                </div>
+            </div>
+            <div class="product__info">
+                <p class="product__text">$150</p>
+                <input class="product__quantity" type="number" name="quantity" id="quantity" min="1">
+                <p class="product__text">FREE</p>
+                <p class="product__text">$300</p>
+                <img src="img/button_close.png" alt="">
             </div>
         </div>
     </div>
-    <div class="collection center">
-        <div class="collection__men">
-            <div class="collection__men-deal">
-                <p><span class="collection__men-offer">HOT DEAL</span><br>FOR MEN</p>
-            </div>
-        </div>
-        <div class="collection__accesories">
-            <div class="collection__accesories-deal">
-                <p><span class="collection__accesories-offer">LUXIROUS & TRENDY</span><br>ACCESORIES</p>
-            </div>
-        </div>
-        <div class="collection__women">
-            <div class="collection__women-deal">
-                <p><span class="collection__women-offer">30% OFFER</span><br> WOMEN</p>
-            </div>
-        </div>
-        <div class="collection__kids">
-            <div class="collection__kids-deal">
-                <p><span class="collection__kids-offer">NEW ARRIVALS</span><br>FOR KIDS</p>
-            </div>
-        </div>
+    <div class="buttons center">
+        <a class="button" href="#">cLEAR SHOPPING CART</a>
+        <a class="button" href="#">cONTINUE sHOPPING</a>
     </div>
-    <section class="closes center">
-        <h1 class="closes__title">Fetured Items</h1>
-        <p class="closes__text">Shop for items based on what we featured in this week</p>
-        <div class="closes__box">
-            <div class="closes__items">
-                <a class="closes__link" href="../BRAND/product.html">
-                    <img class="closes__items-img" src="img/item1.jpg" alt="">
-                    <div class="closes__items-text">
-                        <p class="closes__items-title">MANGO PEOPLE T-SHIRT</p>
-                        <p class="closes__price">$52.00</p>
-                    </div>
-                </a>
-            </div>
-            <div class="closes__items">
-                <a class="closes__link" href="../BRAND/product.html">
-                    <img class="closes__items-img" src="img/item2.jpg" alt="">
-                    <div class="closes__items-text">
-                        <p class="closes__items-title">MANGO PEOPLE T-SHIRT</p>
-                        <p class="closes__price">$52.00</p>
-                    </div>
-                </a>
-            </div>
-            <div class="closes__items">
-                <a class="closes__link" href="../BRAND/product.html">
-                    <img class="closes__items-img" src="img/item3.jpg" alt="">
-                    <div class="closes__items-text">
-                        <p class="closes__items-title">MANGO PEOPLE T-SHIRT</p>
-                        <p class="closes__price">$52.00</p>
-                    </div>
-                </a>
-            </div>
-            <div class="closes__items">
-                <a class="closes__link" href="../BRAND/product.html">
-                    <img class="closes__items-img" src="img/item4.jpg" alt="">
-                    <div class="closes__items-text">
-                        <p class="closes__items-title">MANGO PEOPLE T-SHIRT</p>
-                        <p class="closes__price">$52.00</p>
-                    </div>
-                </a>
-            </div>
-            <div class="closes__items">
-                <a class="closes__link" href="../BRAND/product.html">
-                    <img class="closes__items-img" src="img/item5.jpg" alt="">
-                    <div class="closes__items-text">
-                        <p class="closes__items-title">MANGO PEOPLE T-SHIRT</p>
-                        <p class="closes__price">$52.00</p>
-                    </div>
-                </a>
-            </div>
-            <div class="closes__items">
-                <a class="closes__link" href="../BRAND/product.html">
-                    <img class="closes__items-img" src="img/item6.jpg" alt="">
-                    <div class="closes__items-text">
-                        <p class="closes__items-title">MANGO PEOPLE T-SHIRT</p>
-                        <p class="closes__price">$52.00</p>
-                    </div>
-                </a>
-            </div>
-            <div class="closes__items">
-                <a class="closes__link" href="../BRAND/product.html">
-                    <img class="closes__items-img" src="img/item7.jpg" alt="">
-                    <div class="closes__items-text">
-                        <p class="closes__items-title">MANGO PEOPLE T-SHIRT</p>
-                        <p class="closes__price">$52.00</p>
-                    </div>
-                </a>
-            </div>
-            <div class="closes__items">
-                <a class="closes__link" href="../BRAND/product.html">
-                    <img class="closes__items-img" src="img/item8.jpg" alt="">
-                    <div class="closes__items-text">
-                        <p class="closes__items-title">MANGO PEOPLE T-SHIRT</p>
-                        <p class="closes__price">$52.00</p>
-                    </div>
-                </a>
-            </div>
+    <div class="checking center">
+        <div class="checking__adress">
+            <h3 class="checking__title">Shipping Adress</h3>
+            <input type="text" name="country" id="country" placeholder="Bangladesh">
+            <input type="text" placeholder="State">
+            <input type="text" name="Postcode" id="Postcode" placeholder="Postcode / Zip">
+            <a class="button checking__adress_button" href="#">get a quote</a>
         </div>
-        <button class="closes__button">Browse All Product<img class="closes__button-img" src="img/arrow_white_right.png"
-                alt=""></button>
-    </section>
-    <div class="offer center">
-        <div class="offer__img">
-            <div class="offer__content">
-                <p class="offer__left">30%&nbsp;<span class="offer__left-word">OFFER</span><br><span
-                        class="offer__category">FOR WOMEN</span></p>
-            </div>
+        <div class="checking__discount">
+            <h3 class="checking__title">coupon discount</h3>
+            <p class="checking__text">Enter your coupon code if you have one</p>
+            <input type="text" placeholder="State">
+            <a class="button checking__discount_button" href="#">Apply coupon</a>
         </div>
-        <div class="offer__box">
-            <article class="offer__box-items">
-                <img src="img/delivery.png" alt="">
-                <h4 class="offer__title">Free Delivery</h4>
-                <p class="offer__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with
-                    extensive models.</p>
-            </article>
-            <article class="offer__box-items">
-                <img src="img/sales.png" alt="">
-                <h4 class="offer__title">Sales & discounts</h4>
-                <p class="offer__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with
-                    extensive models.</p>
-            </article>
-            <article class="offer__box-items">
-                <img src="img/assurance.png" alt="">
-                <h4 class="offer__title">Quality assurance</h4>
-                <p class="offer__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with
-                    extensive models.</p>
-            </article>
+        <div class="checking__total">
+            <p class="checking__subtotal">Sub total <span>$900</span></p>
+            <p class="checking__grandtotal">GRAND TOTAL <span>$900</span></p>
+            <hr>
+            <a class="button checking__total_button" href="#">proceed to checkout</a>
         </div>
     </div>
     <div class="top-bottom">
