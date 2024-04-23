@@ -16,11 +16,13 @@
         <div class="heading center">
             <div class="heading__left">
                 <div class="heading__logo">
-                    <a href="index.html"><img src="img/logo1.jpg" alt="Logo"></a>
-                </div>
-                <div class="heading__logo-text">
-                    <p class="heading__logoname">BRAN<span class="heading__logoname-letter">D</span>
-                    </p>
+                    <a class="heading__logo-link" href="index.html">
+                        <img src="img/logo1.jpg" alt="Logo">
+                        <div class="heading__logo-text">
+                            <p class="heading__logoname">BRAN<span class="heading__logoname-letter">D</span>
+                            </p>
+                        </div>
+                    </a>
                 </div>
                 <div class="heading__browse">
                     <details class="heading__details">
@@ -181,7 +183,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="top__list"><a href="product.html" class="top__link">Women</a>
+                    <li class="top__list now"><a href="product.html" class="top__link">Women</a>
                         <div class="top__box">
                             <div class="top__item">
                                 <h3 class="top__title">Women</h3>
@@ -399,7 +401,7 @@
         <details class="checkout__item" open>
             <summary class="checkout__head">01. Shipping Adress</summary>
             <div class="checkout__box">
-                <div class="checkout__left-box">
+                <form class="checkout__left-box">
                     <h4 class="checkout__title">Check as a guest or register</h4>
                     <p class="checkout__text">Register with us for future convenience</p>
                     <div class="checkout__checkbox">
@@ -425,22 +427,22 @@
                         <p class="checkout__text">Easy access to your order history and status</p>
                     </div>
                     <a href="#" class="checkout__button">Continue</a>
-                </div>
-                <div class="checkout__right-box">
+                </form>
+                <form class="checkout__right-box">
                     <h4 class="checkout__title">Already registed?</h4>
                     <p class="checkout__text">Please log in below</p>
                     <div class="checkout__right-data">
-                        <label for="">EMAIL ADDRESS <span class="checkout__footnote">*</span></label>
-                        <input class="checkout__right-input" type="email" name="" id="">
-                        <label for="">PASSWORD <span class="checkout__footnote">*</span></label>
-                        <input class="checkout__right-input" type="password" name="" id="">
+                        <label for="checkout__email">EMAIL ADDRESS <span class="checkout__footnote">*</span></label>
+                        <input class="checkout__right-input" type="email" name="email" id="checkout__email" required>
+                        <label for="checkout__password">PASSWORD <span class="checkout__footnote">*</span></label>
+                        <input class="checkout__right-input" type="password" name="password" id="checkout__password" required>
                         <p class="checkout__text checkout__text_color">* Required Fileds</p>
                     </div>
                     <div class="checkout__right-button">
-                        <a href="#" class="checkout__button">Log in</a>
+                        <a href="#" class="checkout__button" type="submit">Log in</a>
                         <a href="#" class="checkout__button checkout__button_psw">Forgot Password ?</a>
                     </div>
-                </div>
+                </form>
             </div>
 
         </details>
@@ -685,7 +687,7 @@
 
         </details>
     </div>
-    <div class="top-bottom">
+    <div class="top-bottom center">
         <div class="top-bottom__reviews">
             <div class="top-bottom__reviews-img"><img src="img/review.png" alt=""></div>
             <div class="top-bottom__text">
@@ -710,11 +712,13 @@
     <div class="middle-bottom center">
         <div class="middle-bottom__about">
             <div class="heading__logo">
-                <a href="#"><img src="img/logo1.jpg" alt="Logo"></a>
-            </div>
-            <div class="heading__logo-text">
-                <p class="heading__logoname">BRAN<span class="heading__logoname-letter">D</span>
-                </p>
+                <a class="heading__logo-link" href="index.html">
+                    <img src="img/logo1.jpg" alt="Logo">
+                    <div class="heading__logo-text">
+                        <p class="heading__logoname">BRAN<span class="heading__logoname-letter">D</span>
+                        </p>
+                    </div>
+                </a>
             </div>
             <p class="middle-bottom__about-text">Objectively transition extensive data rather than cross functional
                 solutions. Monotonectally syndicate
