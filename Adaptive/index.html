@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cousine:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-top center">
+            <div class="header-top__left">
+                <a class="header-top__link">My Account</a>
+                <a class="header-top__link">MY Wishlist (0)</a>
+                <a class="header-top__link">Checkout</a>
+                <a class="header-top__link">Log In or Register</a>
+            </div>
+            <div class="header-top__right">
+                <div class="currency">
+                    <details class="details currency__details">
+                        <summary class="summery currency__summery"></summary>
+                        <div class="currency__box">
+                            <a class="currency__text">Euro</a>
+                            <a class="currency__text">Pound St.</a>
+                        </div>
+                    </details>
+                </div>
+                <div class="language">
+                    <details class="details language__details">
+                        <summary class="summery language__summery">
+                            <img src="img/gb.png" alt="">English
+                            <img src="img/arrow_down.png" alt="">
+                        </summary>
+                        <div class="language-box">
+                            <a class="language__text"><img class="language__img" src="img/it.png" alt="">Italian</a>
+                            <a class="language__text"><img class="language__img" src="img/es.png" alt="">Spanish</a>
+                            <a class="language__text"><img class="language__img" src="img/fr.png" alt="">French</a>
+                            <a class="language__text"><img class="language__img" src="img/de.png" alt="">German</a>
+                        </div>
+                    </details>
+                </div>
+                <div class="bag">
+                    <details class="details">
+                        <summary class="summery">My Bag: 0 item(s)</summary>
+                        <div class="bag__box">
+                            <h5 class="bag__title">Recently added item(s)</h5>
+                            <div class="bag__item">
+                                <a class="bag__img" href="#"></a>
+                                <div class="bag__info">
+                                    <p class="bag__text">Mustard yellow ruffle dress</p>
+                                    <p class="bag__price">$478</p>
+                                </div>
+                                <div class="bag__close">x</div>
+                            </div>
+                            <div class="bag__item">
+                                <a class="bag__img" href="#"></a>
+                                <div class="bag__info">
+                                    <p class="bag__text">Navy Blue Silk Pleated Shift Dress</p>
+                                    <p class="bag__price"><span class="bag__price_line">$250</span>$180</p>
+                                </div>
+                                <div class="bag__close">x</div>
+                            </div>
+                            <div class="bag__total">
+                                <p class="bag__total-price"><span class="bag__total-name">Shipping:</span>$7</p>
+                                <p class="bag__total-price"><span class="bag__total-name">Total:</span>$736</p>
+                            </div>
+                            <div class="bag__buttons">
+                                <a class="bag__button1" href="#">Cart</a>
+                                <a class="bag__button2" href="#">Checkout</a>
+                            </div>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </div>
+        <div class="search center">
+            <input class="search__input" type="text" placeholder="Find it here...">
+            <button class="search__button"><img class="search__img" src="img/search_icon.png" alt=""></button>
+        </div>
+        <div class="header-info center">
+            <a class="logo" href="#">
+                <img src="img/logo.png" alt="logo">
+                <p class="logo__text">FENGO</p>
+            </a>
+            <nav class="menu">
+                <ul>
+                    <li class="menu__list"><a class="menu__link" href="#">Fashion</a></li>
+                    <li class="menu__list"><a class="menu__link" href="#">Electronics</a></li>
+                    <li class="menu__list"><a class="menu__link" href="#">Gifts</a></li>
+                    <li class="menu__list"><a class="menu__link" href="#">Books</a></li>
+                    <li class="menu__list"><a class="menu__link" href="#">At Home</a></li>
+                    <li class="menu__list"><a class="menu__link" href="#">Music</a></li>
+                    <li class="menu__list"><a class="menu__link box-position" href="#">Sale</a></li>
+                </ul>
+            </nav>
+            <div class="menu-box">
+                <div class="menu-box__item">
+                    <h3 class="menu-box__title">Clothing</h3>
+                    <a class="menu-box__link" href="#">Dresses</a>
+                    <a class="menu-box__link" href="#">Jeans & Trousers</a>
+                    <a class="menu-box__link" href="#">Blouses & Shirts</a>
+                    <a class="menu-box__link" href="#">Tops & T-Shirts</a>
+                    <a class="menu-box__link" href="#">Jackets & Coats</a>
+                    <a class="menu-box__link" href="#">Skirts</a>
+                </div>
+                <div class="menu-box__item">
+                    <h3 class="menu-box__title">Shoes</h3>
+                    <a class="menu-box__link" href="#">Formal Shoes</a>
+                    <a class="menu-box__link" href="#">Casual Shoes</a>
+                    <a class="menu-box__link" href="#">Sandals</a>
+                    <a class="menu-box__link" href="#">Boots</a>
+                    <a class="menu-box__link" href="#">Wide Fit</a>
+                    <a class="menu-box__link" href="#">Slippers</a>
+                </div>
+                <div class="menu-box__item">
+                    <h3 class="menu-box__title">ACCESSORIES</h3>
+                    <a class="menu-box__link" href="#">Bags & Purses</a>
+                    <a class="menu-box__link" href="#">Belts</a>
+                    <a class="menu-box__link" href="#">Gloves</a>
+                    <a class="menu-box__link" href="#">Jewellery</a>
+                    <a class="menu-box__link" href="#">Sunglasses</a>
+                    <a class="menu-box__link" href="#">Hair Accessories</a>
+                </div>
+                <div class="menu-box__item">
+                    <h3 class="menu-box__title">Sports</h3>
+                    <a class="menu-box__link" href="#">Sport Tops & Vests</a>
+                    <a class="menu-box__link" href="#">Hoodies</a>
+                    <a class="menu-box__link" href="#">Swimwear</a>
+                    <a class="menu-box__link" href="#">Footwear</a>
+                    <a class="menu-box__link" href="#">Sports Underwear</a>
+                    <a class="menu-box__link" href="#">Bags</a>
+                </div>
+                <div class="menu-box__advertising1">
+                    <p class="menu-box__advertising1-text">Dresseses <span class="menu-box__advertising1-offer">from
+                            $10</span></p>
+                </div>
+                <div class="menu-box__advertising2">
+                    <div class="menu-box__advertising2-text">
+                        <p class="menu-box__advertising2-text1">new arrival</p>
+                        <p class="menu-box__advertising2-text2">for</p>
+                        <p class="menu-box__advertising2-text3">Babies</p>
+                    </div>
+                </div>
+                <div class="menu-box__advertising3">
+                    <p class="menu-box__advertising3-text">designer Shoes
+                    </p>
+                </div>
+                <div class="menu-box__advertising4">
+                    <div class="menu-box__advertising4-text">
+                        <p class="menu-box__advertising4-text1">Bags
+                        <p>
+                        <p class="menu-box__advertising4-text2">$30</p>
+                        <p class="menu-box__advertising4-text3">& under</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main-content center">
+        <div class="main-content__title">
+            <p class="main-content__text11">Check your</p>
+            <p class="main-content__text12">autumn style</p>
+            <p class="main-content__text13">All the trends you need this season</p>
+            <p class="main-content__text14"><a href="#">read it now <img src="img/arrow_right_grey.png" alt=""></a></p>
+        </div>
+        <div class="main-content__title2">
+            <p class="main-content__text21">you pay less</p>
+            <p class="main-content__text22">everyone else pays attention.</p>
+            <p class="main-content__text23">Vivamus lacinia urna lorem, eget laoreet mauris lobortis quis. Aliquam augue
+                tortor, aliquet nec tempor a, dapibus vitae nunc. Maecenas vitae purus molestie, tempus sem quis, varius
+                tortor.</p>
+            <p class="main-content__text24"><a href="#">get your discount <img src="img/arrow_right_white_small.png"
+                        alt=""></a></p>
+        </div>
+        <div class="main-content__title3">
+            <p class="main-content__text31">the</p>
+            <p class="main-content__text32">SALE</p>
+            <p class="main-content__text33">final reduction</p>
+            <p class="main-content__text34">up to 70% off</p>
+            <p class="main-content__text35">all sale items</p>
+            <p class="main-content__text36"><a href="#">shop now <img src="img/arrow_right_grey.png" alt=""></a></p>
+        </div>
+    </div>
+    <div class="offers">
+        <div class="offer-box center">
+            <div class="offer-box__item item-1">
+                <div class="item-1__box">
+                    <p class="item-1__box-text1">exclusive</p>
+                    <p class="item-1__box-text2">discount codes & offers</p>
+                </div>
+                <a class="offer-box__link" href="#">get your discount<img class="offer-box__arrow"
+                        src="img/arrow_right_white_small.png" alt=""></a>
+            </div>
+            <div class="offer-box__item item-2">
+                <div class="item-2__box-text">
+                    <p class="item-2__box-text1">the</p>
+                    <p class="item-2__box-text2">hottest styles</p>
+                    <p class="item-2__box-text3">are here</p>
+                </div>
+                <a class="offer-box__link" href="#">watch now<img class="offer-box__arrow"
+                        src="img/arrow_right_white_small.png" alt=""></a>
+            </div>
+            <div class="offer-box__item item-3">
+                <p class="item-3__box-text1">jewelry</p>
+                <p class="item-3__box-text2">every third item is free!</p>
+                <a class="offer-box__link offer-box__link_position" href="#">buy now <img class="offer-box__arrow"
+                        src="img/arrow_right_white_small.png" alt=""></a>
+            </div>
+            <div class="offer-box__item item-4">
+                <div class="item-4__box-text">
+                    <p class="item-4__box-text1">LOOKBOOK</p>
+                    <p class="item-4__box-text2">women</p>
+                    <p class="item-4__box-text3">autumn 2013</p>
+                </div>
+                <a class="offer-box__link" href="#">get the look<img class="offer-box__arrow"
+                        src="img/arrow_right_white_small.png" alt=""></a>
+            </div>
+            <div class="offer-box__item item-5">
+                <p class="item-5__box-text1">accessories</p>
+                <p class="item-5__box-text2">Complete your style</p>
+                <a class="offer-box__link offer-box__link_position" href="#">get the look<img class="offer-box__arrow"
+                        src="img/arrow_right_white_small.png" alt=""></a>
+            </div>
+            <div class="offer-box__item item-6">
+                <a class="offer-box__link offer-box__link_item-6" href="#">what's new?</a>
+            </div>
+        </div>
+    </div>
+    <div class="new-arrivals">
+        <nav class="new-arrivals__header center">
+            <ul class="new-arrivals__list">
+                <li><a class="new-arrivals__list-link link1" href="#">new arrivals</a></li>
+                <li><a class="new-arrivals__list-link link2" href="#">Featured</a></li>
+                <li><a class="new-arrivals__list-link link3" href="#">Special</a></li>
+                <li><a class="new-arrivals__list-link link4" href="#">bestsellers</a></li>
+            </ul>
+        </nav>
+        <div class="products center">
+            <div class="products__items">
+                <div class="products__img">
+                    <div class="products__img_color">
+                        <div class="black"></div>
+                        <div class="blue"></div>
+                        <div class="red"></div>
+                    </div>
+                </div>
+                <div class="products__info">
+                    <p class="products__text">Carded Cotton Shawl Cardigan</p>
+                    <div class="products__price">
+                        <p class="products__price-new">$187</p>
+                    </div>
+                </div>
+                <div class="products__buttons">
+                    <a class="products__buttons-link link1" href="#">add to bag</a>
+                    <a class="products__buttons-link link2" href="#">more info</a>
+                </div>
+                <div class="products__add-box">
+                    <a class="products__add-item add-item1" href="#">+ Add to Wishlist</a>
+                    <a class="products__add-item add-item2" href="#">+ Add to Compare</a>
+                </div>
+            </div>
+            <div class="products__items">
+                <div class="products__img products__img_disc">
+                    <div class="products__img_color">
+                        <div class="black"></div>
+                        <div class="blue"></div>
+                        <div class="red"></div>
+                    </div>
+                </div>
+                <div class="products__info">
+                    <p class="products__text">Shetland Wool Full-Zip Sweater</p>
+                    <div class="products__price">
+                        <p class="products__price-old">$180</p>
+                        <p class="products__price-new">110$</p>
+                    </div>
+                </div>
+                <div class="products__buttons">
+                    <a class="products__buttons-link link1" href="#">add to bag</a>
+                    <a class="products__buttons-link link2" href="#">more info</a>
+                </div>
+                <div class="products__add-box">
+                    <a class="products__add-item add-item1" href="#">+ Add to Wishlist</a>
+                    <a class="products__add-item add-item2" href="#">+ Add to Compare</a>
+                </div>
+            </div>
+            <div class="products__items">
+                <div class="products__img">
+                    <div class="products__img_color">
+                        <div class="black"></div>
+                        <div class="blue"></div>
+                        <div class="red"></div>
+                    </div>
+                </div>
+                <div class="products__info">
+                    <p class="products__text">Mustard Yellow Ruffle White Shirt</p>
+                    <div class="products__price">
+                        <p class="products__price-new">$478</p>
+                    </div>
+                </div>
+                <div class="products__buttons">
+                    <a class="products__buttons-link link1" href="#">add to bag</a>
+                    <a class="products__buttons-link link2" href="#">more info</a>
+                </div>
+                <div class="products__add-box">
+                    <a class="products__add-item add-item1" href="#">+ Add to Wishlist</a>
+                    <a class="products__add-item add-item2" href="#">+ Add to Compare</a>
+                </div>
+            </div>
+            <div class="products__items">
+                <div class="products__img products__img_new">
+                    <div class="products__img_color">
+                        <div class="black"></div>
+                        <div class="blue"></div>
+                        <div class="red"></div>
+                    </div>
+                </div>
+                <div class="products__info">
+                    <p class="products__text">Fine Custom-Fit Poplin Regent</p>
+                    <div class="products__price">
+                        <p class="products__price-new">$1150</p>
+                    </div>
+                </div>
+                <div class="products__buttons">
+                    <a class="products__buttons-link link1" href="#">add to bag</a>
+                    <a class="products__buttons-link link2" href="#">more info</a>
+                </div>
+                <div class="products__add-box">
+                    <a class="products__add-item add-item1" href="#">+ Add to Wishlist</a>
+                    <a class="products__add-item add-item2" href="#">+ Add to Compare</a>
+                </div>
+            </div>
+            <div class="products__items">
+                <div class="products__img">
+                    <div class="products__img_color">
+                        <div class="black"></div>
+                        <div class="blue"></div>
+                        <div class="red"></div>
+                    </div>
+                </div>
+                <div class="products__info">
+                    <p class="products__text">Carded Cotton Shawl Cardigan</p>
+                    <div class="products__price">
+                        <p class="products__price-new">$248</p>
+                    </div>
+                </div>
+                <div class="products__buttons">
+                    <a class="products__buttons-link link1" href="#">add to bag</a>
+                    <a class="products__buttons-link link2" href="#">more info</a>
+                </div>
+                <div class="products__add-box">
+                    <a class="products__add-item add-item1" href="#">+ Add to Wishlist</a>
+                    <a class="products__add-item add-item2" href="#">+ Add to Compare</a>
+                </div>
+            </div>
+            <div class="products__items">
+                <div class="products__img">
+                    <div class="products__img_color">
+                        <div class="black"></div>
+                        <div class="blue"></div>
+                        <div class="red"></div>
+                    </div>
+                </div>
+                <div class="products__info">
+                    <p class="products__text">Shetland Wool Full-Zip Sweater</p>
+                    <div class="products__price">
+                        <p class="products__price-new">$657</p>
+                    </div>
+                </div>
+                <div class="products__buttons">
+                    <a class="products__buttons-link link1" href="#">add to bag</a>
+                    <a class="products__buttons-link link2" href="#">more info</a>
+                </div>
+                <div class="products__add-box">
+                    <a class="products__add-item add-item1" href="#">+ Add to Wishlist</a>
+                    <a class="products__add-item add-item2" href="#">+ Add to Compare</a>
+                </div>
+            </div>
+            <div class="products__items">
+                <div class="products__img products__img_out">
+                    <div class="products__img_color">
+                        <div class="black"></div>
+                        <div class="blue"></div>
+                        <div class="red"></div>
+                    </div>
+                </div>
+                <div class="products__info">
+                    <p class="products__text">Mustard Yellow Ruffle White Shirt</p>
+                    <div class="products__price">
+                        <p class="products__price-old">$321</p>
+                        <p class="products__price-new">$214</p>
+                    </div>
+                </div>
+                <div class="products__buttons">
+                    <a class="products__buttons-link link1" href="#">add to bag</a>
+                    <a class="products__buttons-link link2" href="#">more info</a>
+                </div>
+                <div class="products__add-box">
+                    <a class="products__add-item add-item1" href="#">+ Add to Wishlist</a>
+                    <a class="products__add-item add-item2" href="#">+ Add to Compare</a>
+                </div>
+            </div>
+            <div class="products__items">
+                <div class="products__img">
+                    <div class="products__img_color">
+                        <div class="black"></div>
+                        <div class="blue"></div>
+                        <div class="red"></div>
+                    </div>
+                </div>
+                <div class="products__info">
+                    <p class="products__text">Fine Custom-Fit Poplin Regent</p>
+                    <div class="products__price">
+                        <p class="products__price-new">$147</p>
+                    </div>
+                </div>
+                <div class="products__buttons">
+                    <a class="products__buttons-link link1" href="#">add to bag</a>
+                    <a class="products__buttons-link link2" href="#">more info</a>
+                </div>
+                <div class="products__add-box">
+                    <a class="products__add-item add-item1" href="#">+ Add to Wishlist</a>
+                    <a class="products__add-item add-item2" href="#">+ Add to Compare</a>
+                </div>
+            </div>
+        </div>
+        <div class="showMoreProduct center">
+            <a class="showMoreProduct__link" href="#">Show More</a>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-box center">
+            <div class="footer-column1">
+                <section class="about">
+                    <h3 class="about__title">About fengo shop</h3>
+                    <div class="about__info">
+                        <div class="about__img"></div>
+                        <div class="about__description">
+                            <p class="about__text">Morbi pretium odio in dapibus varius. Integer sagittis, tellus ac
+                                venenatis venenatis, ipsum ligula auctor lectus, suscipit velit quam quis turpis. Fusce
+                                scelerisque aliquet commodo. Sed lobortis laoreet risus vitae tincidunt. Ut consectetur
+                                nec
+                                purus in egestas. Pellentesque vehicula urna purus. </p>
+                            <a class="link" href="#">Read more <img class="arrow" src="img/arrow_right_grey.png"
+                                    alt=""></a>
+                        </div>
+                    </div>
+                </section>
+                <section class="blog">
+                    <div class="blog__top">
+                        <h3 class="blog__title">From the Blog</h3>
+                        <div class="arrows">
+                            <div class="arrows__arrow1"></div>
+                            <div class="arrows__arrow2"></div>
+                        </div>
+                    </div>
+                    <div class="blog__box-1">
+                        <div class="blog__img"></div>
+                        <p class="blog__text">Pellentesque vehicula urna purus</p>
+                    </div>
+                    <div class="blog__box-2">
+                        <div class="blog__img"></div>
+                        <p class="blog__text">Curabitur faucibus aliquam felis quis</p>
+                    </div>
+                </section>
+                <section class="quickContact">
+                    <h3 class="quickContact__title">QUICK CONTACT</h3>
+                    <div class="quickContact__info">
+                        <div class="quickContact__map">
+                            <img class="quickContact__pointer" src="img/poiter.png" alt="">
+                            <p class="quickContact__logo">FENGO</p>
+                        </div>
+                        <form class="quickContact__form" action="#">
+                            <input class="quickContact__name" type="text" name="name" placeholder="Enter your name"
+                                required>
+                            <input class="quickContact__email" type="email" name="email" placeholder="Enter your E-mail"
+                                required>
+                            <input class="quickContact__text quickContact__text_size" type="text" name="text"
+                                placeholder="Enter your message" required>
+                            <a class="link" href="#">Send message <img class="arrow" src="img/arrow_right_grey.png"
+                                    alt=""></a>
+                        </form>
+                    </div>
+                </section>
+                <input class="email" type="email" placeholder="Enter your e-mail for stay in the know" required>
+            </div>
+            <div class="footer-column2">
+                <section class="favorite">
+                    <div class="favorite__top">
+                        <h3 class="favorite__title">Most favorite</h3>
+                        <div class="arrows">
+                            <div class="arrows__arrow1"></div>
+                            <div class="arrows__arrow2"></div>
+                        </div>
+                    </div>
+                    <div class="favorite__box">
+                        <div class="favorite__box-1">
+                            <div class="favorite__img"></div>
+                            <div class="favorite__description">
+                                <p class="favorite__text">Black puplum waist tie kudu dress</p>
+                                <p class="favorite__price">$478</p>
+                            </div>
+                        </div>
+                        <div class="favorite__box-2">
+                            <div class="favorite__img"></div>
+                            <div class="favorite__description">
+                                <p class="favorite__text">Pale pink and black buttoned dress</p>
+                                <p class="favorite__price"><span class="favorite__price_disc">$250</span>$180</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                </section>
+                <section class="twitter">
+                    <div class="twitter__top">
+                        <h3 class="twitter__title">Most favorite</h3>
+                        <a class="twitter__follow" href="#">Follow</a>
+                    </div>
+                    <div class="comment">
+                        <img src="img/logo_twit.png" alt="">
+                        <h3>Promokit</h3>
+                        <p>@marek_mnishek</p>
+                    </div>
+                    
+
+                </section>
+            </div>
+            <div class="footer-column3"></div>
+        </div>
+        <div class="footer-bottom center">
+            <div class="left-part">
+                <div class="cards">
+                    <img src="img/discover.png" alt="">
+                    <img src="img/americanexpress.png" alt="">
+                    <img src="img/visa.png" alt="">
+                    <img src="img/mastercard.png" alt="">
+                    <img src="img/paypal.png" alt="">
+                    <img src="img/maestro.png" alt="">
+                </div>
+                <p class="copyright">© 2013 Powered by WooCommerce™. All Rights Reserved.</p>
+            </div>
+            <div class="social">
+                <a class="social__box facebook-icon" href="#"><img class="social__img" src="img/facebook.png"
+                        alt=""></a>
+                <a class="social__box twitter-icon" href="#"><img class="social__img" src="img/twitter.png" alt=""></a>
+                <a class="social__box link-icon" href="#"><img class="social__img" src="img/link.png" alt=""></a>
+                <a class="social__box d-icon" href="#"><img class="social__img" src="img/d.png" alt=""></a>
+                <a class="social__box in-icon" href="#"><img class="social__img" src="img/in.png" alt=""></a>
+                <a class="social__box c-icon" href="#"><img class="social__img" src="img/c.png" alt=""></a>
+                <a class="social__box skype-icon" href="#"><img class="social__img" src="img/skype.png" alt=""></a>
+                <a class="social__box mail-icon" href="#"><img class="social__img" src="img/mail.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
