@@ -22,7 +22,8 @@
                 <a class="header-top__link">My Account</a>
                 <a class="header-top__link">MY Wishlist (0)</a>
                 <a class="header-top__link">Checkout</a>
-                <a class="header-top__link">Log In or Register</a>
+                <a class="header-top__link link4">Log In or Register</a>
+                <a class="header-top__link link4-for-screens768">Log In</a>
             </div>
             <div class="header-top__right">
                 <div class="currency">
@@ -54,7 +55,7 @@
                         <div class="bag__box">
                             <h5 class="bag__title">Recently added item(s)</h5>
                             <div class="bag__item">
-                                <a class="bag__img" href="#"></a>
+                                <a class="bag__img img1" href="#"></a>
                                 <div class="bag__info">
                                     <p class="bag__text">Mustard yellow ruffle dress</p>
                                     <p class="bag__price">$478</p>
@@ -62,7 +63,7 @@
                                 <div class="bag__close">x</div>
                             </div>
                             <div class="bag__item">
-                                <a class="bag__img" href="#"></a>
+                                <a class="bag__img img2" href="#"></a>
                                 <div class="bag__info">
                                     <p class="bag__text">Navy Blue Silk Pleated Shift Dress</p>
                                     <p class="bag__price"><span class="bag__price_line">$250</span>$180</p>
@@ -87,83 +88,622 @@
             <button class="search__button"><img class="search__img" src="img/search_icon.png" alt=""></button>
         </div>
         <div class="header-info center">
-            <a class="logo" href="#">
+            <a class="logo" href="#" id="logo">
                 <img src="img/logo.png" alt="logo">
                 <p class="logo__text">FENGO</p>
             </a>
+            <a class="header-top__link logIn">Log In or Register</a>
             <nav class="menu">
                 <ul>
-                    <li class="menu__list"><a class="menu__link" href="#">Fashion</a></li>
-                    <li class="menu__list"><a class="menu__link" href="#">Electronics</a></li>
-                    <li class="menu__list"><a class="menu__link" href="#">Gifts</a></li>
-                    <li class="menu__list"><a class="menu__link" href="#">Books</a></li>
-                    <li class="menu__list"><a class="menu__link" href="#">At Home</a></li>
-                    <li class="menu__list"><a class="menu__link" href="#">Music</a></li>
-                    <li class="menu__list"><a class="menu__link box-position" href="#">Sale</a></li>
+                    <li class="menu__list menu__list_first"><a class="menu__link" href="#">Fashion</a>
+                        <div class="menu-box">
+                            <div class="menu-box__item">
+                                <h3 class="menu-box__title title1">Clothing</h3>
+                                <a class="menu-box__link" href="#">Dresses</a>
+                                <a class="menu-box__link" href="#">Jeans & Trousers</a>
+                                <a class="menu-box__link" href="#">Blouses & Shirts</a>
+                                <a class="menu-box__link" href="#">Tops & T-Shirts</a>
+                                <a class="menu-box__link" href="#">Jackets & Coats</a>
+                                <a class="menu-box__link" href="#">Skirts</a>
+                            </div>
+                            <div class="menu-box__item">
+                                <h3 class="menu-box__title title2">Shoes</h3>
+                                <a class="menu-box__link" href="#">Formal Shoes</a>
+                                <a class="menu-box__link" href="#">Casual Shoes</a>
+                                <a class="menu-box__link" href="#">Sandals</a>
+                                <a class="menu-box__link" href="#">Boots</a>
+                                <a class="menu-box__link" href="#">Wide Fit</a>
+                                <a class="menu-box__link" href="#">Slippers</a>
+                            </div>
+                            <div class="menu-box__item">
+                                <h3 class="menu-box__title title3">ACCESSORIES</h3>
+                                <a class="menu-box__link" href="#">Bags & Purses</a>
+                                <a class="menu-box__link" href="#">Belts</a>
+                                <a class="menu-box__link" href="#">Gloves</a>
+                                <a class="menu-box__link" href="#">Jewellery</a>
+                                <a class="menu-box__link" href="#">Sunglasses</a>
+                                <a class="menu-box__link" href="#">Hair Accessories</a>
+                            </div>
+                            <div class="menu-box__item">
+                                <h3 class="menu-box__title title4">Sports</h3>
+                                <a class="menu-box__link" href="#">Sport Tops & Vests</a>
+                                <a class="menu-box__link" href="#">Hoodies</a>
+                                <a class="menu-box__link" href="#">Swimwear</a>
+                                <a class="menu-box__link" href="#">Footwear</a>
+                                <a class="menu-box__link" href="#">Sports Underwear</a>
+                                <a class="menu-box__link" href="#">Bags</a>
+                            </div>
+                            <div class="menu-box__advertising1">
+                                <p class="menu-box__advertising1-text">Dresseses <span
+                                        class="menu-box__advertising1-offer">from
+                                        $10</span></p>
+                            </div>
+                            <div class="menu-box__advertising2">
+                                <div class="menu-box__advertising2-text">
+                                    <p class="menu-box__advertising2-text1">new arrival</p>
+                                    <p class="menu-box__advertising2-text2">for</p>
+                                    <p class="menu-box__advertising2-text3">Babies</p>
+                                </div>
+                            </div>
+                            <div class="menu-box__advertising3">
+                                <p class="menu-box__advertising3-text">designer Shoes
+                                </p>
+                            </div>
+                            <div class="menu-box__advertising4">
+                                <div class="menu-box__advertising4-text">
+                                    <p class="menu-box__advertising4-text1">Bags
+                                    <p>
+                                    <p class="menu-box__advertising4-text2">$30</p>
+                                    <p class="menu-box__advertising4-text3">& under</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu__list"><a class="menu__link" href="#">Electronics</a>
+                        <div class="menu-box">
+                            <div class="menu-box__item">
+                                <h3 class="menu-box__title title1">Clothing</h3>
+                                <a class="menu-box__link" href="#">Dresses</a>
+                                <a class="menu-box__link" href="#">Jeans & Trousers</a>
+                                <a class="menu-box__link" href="#">Blouses & Shirts</a>
+                                <a class="menu-box__link" href="#">Tops & T-Shirts</a>
+                                <a class="menu-box__link" href="#">Jackets & Coats</a>
+                                <a class="menu-box__link" href="#">Skirts</a>
+                            </div>
+                            <div class="menu-box__item">
+                                <h3 class="menu-box__title title2">Shoes</h3>
+                                <a class="menu-box__link" href="#">Formal Shoes</a>
+                                <a class="menu-box__link" href="#">Casual Shoes</a>
+                                <a class="menu-box__link" href="#">Sandals</a>
+                                <a class="menu-box__link" href="#">Boots</a>
+                                <a class="menu-box__link" href="#">Wide Fit</a>
+                                <a class="menu-box__link" href="#">Slippers</a>
+                            </div>
+                            <div class="menu-box__item">
+                                <h3 class="menu-box__title title3">ACCESSORIES</h3>
+                                <a class="menu-box__link" href="#">Bags & Purses</a>
+                                <a class="menu-box__link" href="#">Belts</a>
+                                <a class="menu-box__link" href="#">Gloves</a>
+                                <a class="menu-box__link" href="#">Jewellery</a>
+                                <a class="menu-box__link" href="#">Sunglasses</a>
+                                <a class="menu-box__link" href="#">Hair Accessories</a>
+                            </div>
+                            <div class="menu-box__item">
+                                <h3 class="menu-box__title title4">Sports</h3>
+                                <a class="menu-box__link" href="#">Sport Tops & Vests</a>
+                                <a class="menu-box__link" href="#">Hoodies</a>
+                                <a class="menu-box__link" href="#">Swimwear</a>
+                                <a class="menu-box__link" href="#">Footwear</a>
+                                <a class="menu-box__link" href="#">Sports Underwear</a>
+                                <a class="menu-box__link" href="#">Bags</a>
+                            </div>
+                            <div class="menu-box__advertising1">
+                                <p class="menu-box__advertising1-text">Dresseses <span
+                                        class="menu-box__advertising1-offer">from
+                                        $10</span></p>
+                            </div>
+                            <div class="menu-box__advertising2">
+                                <div class="menu-box__advertising2-text">
+                                    <p class="menu-box__advertising2-text1">new arrival</p>
+                                    <p class="menu-box__advertising2-text2">for</p>
+                                    <p class="menu-box__advertising2-text3">Babies</p>
+                                </div>
+                            </div>
+                            <div class="menu-box__advertising3">
+                                <p class="menu-box__advertising3-text">designer Shoes
+                                </p>
+                            </div>
+                            <div class="menu-box__advertising4">
+                                <div class="menu-box__advertising4-text">
+                                    <p class="menu-box__advertising4-text1">Bags
+                                    <p>
+                                    <p class="menu-box__advertising4-text2">$30</p>
+                                    <p class="menu-box__advertising4-text3">& under</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu__list"><a class="menu__link" href="#">Gifts</a>
+                        <div class="menu-box">
+                            <div class="menu-box__item">
+                                <h3 class="menu-box__title title1">Clothing</h3>
+                                <a class="menu-box__link" href="#">Dresses</a>
+                                <a class="menu-box__link" href="#">Jeans & Trousers</a>
+                                <a class="menu-box__link" href="#">Blouses & Shirts</a>
+                                <a class="menu-box__link" href="#">Tops & T-Shirts</a>
+                                <a class="menu-box__link" href="#">Jackets & Coats</a>
+                                <a class="menu-box__link" href="#">Skirts</a>
+                            </div>
+                            <div class="menu-box__item">
+                                <h3 class="menu-box__title title2">Shoes</h3>
+                                <a class="menu-box__link" href="#">Formal Shoes</a>
+                                <a class="menu-box__link" href="#">Casual Shoes</a>
+                                <a class="menu-box__link" href="#">Sandals</a>
+                                <a class="menu-box__link" href="#">Boots</a>
+                                <a class="menu-box__link" href="#">Wide Fit</a>
+                                <a class="menu-box__link" href="#">Slippers</a>
+                            </div>
+                            <div class="menu-box__item">
+                                <h3 class="menu-box__title title3">ACCESSORIES</h3>
+                                <a class="menu-box__link" href="#">Bags & Purses</a>
+                                <a class="menu-box__link" href="#">Belts</a>
+                                <a class="menu-box__link" href="#">Gloves</a>
+                                <a class="menu-box__link" href="#">Jewellery</a>
+                                <a class="menu-box__link" href="#">Sunglasses</a>
+                                <a class="menu-box__link" href="#">Hair Accessories</a>
+                            </div>
+                            <div class="menu-box__item">
+                                <h3 class="menu-box__title title4">Sports</h3>
+                                <a class="menu-box__link" href="#">Sport Tops & Vests</a>
+                                <a class="menu-box__link" href="#">Hoodies</a>
+                                <a class="menu-box__link" href="#">Swimwear</a>
+                                <a class="menu-box__link" href="#">Footwear</a>
+                                <a class="menu-box__link" href="#">Sports Underwear</a>
+                                <a class="menu-box__link" href="#">Bags</a>
+                            </div>
+                            <div class="menu-box__advertising1">
+                                <p class="menu-box__advertising1-text">Dresseses <span
+                                        class="menu-box__advertising1-offer">from
+                                        $10</span></p>
+                            </div>
+                            <div class="menu-box__advertising2">
+                                <div class="menu-box__advertising2-text">
+                                    <p class="menu-box__advertising2-text1">new arrival</p>
+                                    <p class="menu-box__advertising2-text2">for</p>
+                                    <p class="menu-box__advertising2-text3">Babies</p>
+                                </div>
+                            </div>
+                            <div class="menu-box__advertising3">
+                                <p class="menu-box__advertising3-text">designer Shoes
+                                </p>
+                            </div>
+                            <div class="menu-box__advertising4">
+                                <div class="menu-box__advertising4-text">
+                                    <p class="menu-box__advertising4-text1">Bags
+                                    <p>
+                                    <p class="menu-box__advertising4-text2">$30</p>
+                                    <p class="menu-box__advertising4-text3">& under</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu__list"><a class="menu__link" href="#">Books</a>
+                        <div class="menu-box">
+                            <div class="menu-box__item">
+                                <h3 class="menu-box__title title1">Clothing</h3>
+                                <a class="menu-box__link" href="#">Dresses</a>
+                                <a class="menu-box__link" href="#">Jeans & Trousers</a>
+                                <a class="menu-box__link" href="#">Blouses & Shirts</a>
+                                <a class="menu-box__link" href="#">Tops & T-Shirts</a>
+                                <a class="menu-box__link" href="#">Jackets & Coats</a>
+                                <a class="menu-box__link" href="#">Skirts</a>
+                            </div>
+                            <div class="menu-box__item">
+                                <h3 class="menu-box__title title2">Shoes</h3>
+                                <a class="menu-box__link" href="#">Formal Shoes</a>
+                                <a class="menu-box__link" href="#">Casual Shoes</a>
+                                <a class="menu-box__link" href="#">Sandals</a>
+                                <a class="menu-box__link" href="#">Boots</a>
+                                <a class="menu-box__link" href="#">Wide Fit</a>
+                                <a class="menu-box__link" href="#">Slippers</a>
+                            </div>
+                            <div class="menu-box__item">
+                                <h3 class="menu-box__title title3">ACCESSORIES</h3>
+                                <a class="menu-box__link" href="#">Bags & Purses</a>
+                                <a class="menu-box__link" href="#">Belts</a>
+                                <a class="menu-box__link" href="#">Gloves</a>
+                                <a class="menu-box__link" href="#">Jewellery</a>
+                                <a class="menu-box__link" href="#">Sunglasses</a>
+                                <a class="menu-box__link" href="#">Hair Accessories</a>
+                            </div>
+                            <div class="menu-box__item">
+                                <h3 class="menu-box__title title4">Sports</h3>
+                                <a class="menu-box__link" href="#">Sport Tops & Vests</a>
+                                <a class="menu-box__link" href="#">Hoodies</a>
+                                <a class="menu-box__link" href="#">Swimwear</a>
+                                <a class="menu-box__link" href="#">Footwear</a>
+                                <a class="menu-box__link" href="#">Sports Underwear</a>
+                                <a class="menu-box__link" href="#">Bags</a>
+                            </div>
+                            <div class="menu-box__advertising1">
+                                <p class="menu-box__advertising1-text">Dresseses <span
+                                        class="menu-box__advertising1-offer">from
+                                        $10</span></p>
+                            </div>
+                            <div class="menu-box__advertising2">
+                                <div class="menu-box__advertising2-text">
+                                    <p class="menu-box__advertising2-text1">new arrival</p>
+                                    <p class="menu-box__advertising2-text2">for</p>
+                                    <p class="menu-box__advertising2-text3">Babies</p>
+                                </div>
+                            </div>
+                            <div class="menu-box__advertising3">
+                                <p class="menu-box__advertising3-text">designer Shoes
+                                </p>
+                            </div>
+                            <div class="menu-box__advertising4">
+                                <div class="menu-box__advertising4-text">
+                                    <p class="menu-box__advertising4-text1">Bags
+                                    <p>
+                                    <p class="menu-box__advertising4-text2">$30</p>
+                                    <p class="menu-box__advertising4-text3">& under</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu__list"><a class="menu__link" href="#">At Home</a>
+                        <div class="menu-box">
+                            <div class="menu-box__item">
+                                <h3 class="menu-box__title title1">Clothing</h3>
+                                <a class="menu-box__link" href="#">Dresses</a>
+                                <a class="menu-box__link" href="#">Jeans & Trousers</a>
+                                <a class="menu-box__link" href="#">Blouses & Shirts</a>
+                                <a class="menu-box__link" href="#">Tops & T-Shirts</a>
+                                <a class="menu-box__link" href="#">Jackets & Coats</a>
+                                <a class="menu-box__link" href="#">Skirts</a>
+                            </div>
+                            <div class="menu-box__item">
+                                <h3 class="menu-box__title title2">Shoes</h3>
+                                <a class="menu-box__link" href="#">Formal Shoes</a>
+                                <a class="menu-box__link" href="#">Casual Shoes</a>
+                                <a class="menu-box__link" href="#">Sandals</a>
+                                <a class="menu-box__link" href="#">Boots</a>
+                                <a class="menu-box__link" href="#">Wide Fit</a>
+                                <a class="menu-box__link" href="#">Slippers</a>
+                            </div>
+                            <div class="menu-box__item">
+                                <h3 class="menu-box__title title3">ACCESSORIES</h3>
+                                <a class="menu-box__link" href="#">Bags & Purses</a>
+                                <a class="menu-box__link" href="#">Belts</a>
+                                <a class="menu-box__link" href="#">Gloves</a>
+                                <a class="menu-box__link" href="#">Jewellery</a>
+                                <a class="menu-box__link" href="#">Sunglasses</a>
+                                <a class="menu-box__link" href="#">Hair Accessories</a>
+                            </div>
+                            <div class="menu-box__item">
+                                <h3 class="menu-box__title title4">Sports</h3>
+                                <a class="menu-box__link" href="#">Sport Tops & Vests</a>
+                                <a class="menu-box__link" href="#">Hoodies</a>
+                                <a class="menu-box__link" href="#">Swimwear</a>
+                                <a class="menu-box__link" href="#">Footwear</a>
+                                <a class="menu-box__link" href="#">Sports Underwear</a>
+                                <a class="menu-box__link" href="#">Bags</a>
+                            </div>
+                            <div class="menu-box__advertising1">
+                                <p class="menu-box__advertising1-text">Dresseses <span
+                                        class="menu-box__advertising1-offer">from
+                                        $10</span></p>
+                            </div>
+                            <div class="menu-box__advertising2">
+                                <div class="menu-box__advertising2-text">
+                                    <p class="menu-box__advertising2-text1">new arrival</p>
+                                    <p class="menu-box__advertising2-text2">for</p>
+                                    <p class="menu-box__advertising2-text3">Babies</p>
+                                </div>
+                            </div>
+                            <div class="menu-box__advertising3">
+                                <p class="menu-box__advertising3-text">designer Shoes
+                                </p>
+                            </div>
+                            <div class="menu-box__advertising4">
+                                <div class="menu-box__advertising4-text">
+                                    <p class="menu-box__advertising4-text1">Bags
+                                    <p>
+                                    <p class="menu-box__advertising4-text2">$30</p>
+                                    <p class="menu-box__advertising4-text3">& under</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu__list"><a class="menu__link" href="#">Music</a>
+                        <div class="menu-box">
+                            <div class="menu-box__item">
+                                <h3 class="menu-box__title title1">Clothing</h3>
+                                <a class="menu-box__link" href="#">Dresses</a>
+                                <a class="menu-box__link" href="#">Jeans & Trousers</a>
+                                <a class="menu-box__link" href="#">Blouses & Shirts</a>
+                                <a class="menu-box__link" href="#">Tops & T-Shirts</a>
+                                <a class="menu-box__link" href="#">Jackets & Coats</a>
+                                <a class="menu-box__link" href="#">Skirts</a>
+                            </div>
+                            <div class="menu-box__item">
+                                <h3 class="menu-box__title title2">Shoes</h3>
+                                <a class="menu-box__link" href="#">Formal Shoes</a>
+                                <a class="menu-box__link" href="#">Casual Shoes</a>
+                                <a class="menu-box__link" href="#">Sandals</a>
+                                <a class="menu-box__link" href="#">Boots</a>
+                                <a class="menu-box__link" href="#">Wide Fit</a>
+                                <a class="menu-box__link" href="#">Slippers</a>
+                            </div>
+                            <div class="menu-box__item">
+                                <h3 class="menu-box__title title3">ACCESSORIES</h3>
+                                <a class="menu-box__link" href="#">Bags & Purses</a>
+                                <a class="menu-box__link" href="#">Belts</a>
+                                <a class="menu-box__link" href="#">Gloves</a>
+                                <a class="menu-box__link" href="#">Jewellery</a>
+                                <a class="menu-box__link" href="#">Sunglasses</a>
+                                <a class="menu-box__link" href="#">Hair Accessories</a>
+                            </div>
+                            <div class="menu-box__item">
+                                <h3 class="menu-box__title title4">Sports</h3>
+                                <a class="menu-box__link" href="#">Sport Tops & Vests</a>
+                                <a class="menu-box__link" href="#">Hoodies</a>
+                                <a class="menu-box__link" href="#">Swimwear</a>
+                                <a class="menu-box__link" href="#">Footwear</a>
+                                <a class="menu-box__link" href="#">Sports Underwear</a>
+                                <a class="menu-box__link" href="#">Bags</a>
+                            </div>
+                            <div class="menu-box__advertising1">
+                                <p class="menu-box__advertising1-text">Dresseses <span
+                                        class="menu-box__advertising1-offer">from
+                                        $10</span></p>
+                            </div>
+                            <div class="menu-box__advertising2">
+                                <div class="menu-box__advertising2-text">
+                                    <p class="menu-box__advertising2-text1">new arrival</p>
+                                    <p class="menu-box__advertising2-text2">for</p>
+                                    <p class="menu-box__advertising2-text3">Babies</p>
+                                </div>
+                            </div>
+                            <div class="menu-box__advertising3">
+                                <p class="menu-box__advertising3-text">designer Shoes
+                                </p>
+                            </div>
+                            <div class="menu-box__advertising4">
+                                <div class="menu-box__advertising4-text">
+                                    <p class="menu-box__advertising4-text1">Bags
+                                    <p>
+                                    <p class="menu-box__advertising4-text2">$30</p>
+                                    <p class="menu-box__advertising4-text3">& under</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu__list menu__list_last"><a class="menu__link box-position" href="#">Sale</a>
+                        <div class="menu-box">
+                            <div class="menu-box__item">
+                                <h3 class="menu-box__title title1">Clothing</h3>
+                                <a class="menu-box__link" href="#">Dresses</a>
+                                <a class="menu-box__link" href="#">Jeans & Trousers</a>
+                                <a class="menu-box__link" href="#">Blouses & Shirts</a>
+                                <a class="menu-box__link" href="#">Tops & T-Shirts</a>
+                                <a class="menu-box__link" href="#">Jackets & Coats</a>
+                                <a class="menu-box__link" href="#">Skirts</a>
+                            </div>
+                            <div class="menu-box__item">
+                                <h3 class="menu-box__title title2">Shoes</h3>
+                                <a class="menu-box__link" href="#">Formal Shoes</a>
+                                <a class="menu-box__link" href="#">Casual Shoes</a>
+                                <a class="menu-box__link" href="#">Sandals</a>
+                                <a class="menu-box__link" href="#">Boots</a>
+                                <a class="menu-box__link" href="#">Wide Fit</a>
+                                <a class="menu-box__link" href="#">Slippers</a>
+                            </div>
+                            <div class="menu-box__item">
+                                <h3 class="menu-box__title title3">ACCESSORIES</h3>
+                                <a class="menu-box__link" href="#">Bags & Purses</a>
+                                <a class="menu-box__link" href="#">Belts</a>
+                                <a class="menu-box__link" href="#">Gloves</a>
+                                <a class="menu-box__link" href="#">Jewellery</a>
+                                <a class="menu-box__link" href="#">Sunglasses</a>
+                                <a class="menu-box__link" href="#">Hair Accessories</a>
+                            </div>
+                            <div class="menu-box__item">
+                                <h3 class="menu-box__title title4">Sports</h3>
+                                <a class="menu-box__link" href="#">Sport Tops & Vests</a>
+                                <a class="menu-box__link" href="#">Hoodies</a>
+                                <a class="menu-box__link" href="#">Swimwear</a>
+                                <a class="menu-box__link" href="#">Footwear</a>
+                                <a class="menu-box__link" href="#">Sports Underwear</a>
+                                <a class="menu-box__link" href="#">Bags</a>
+                            </div>
+                            <div class="menu-box__advertising1">
+                                <p class="menu-box__advertising1-text">Dresseses <span
+                                        class="menu-box__advertising1-offer">from
+                                        $10</span></p>
+                            </div>
+                            <div class="menu-box__advertising2">
+                                <div class="menu-box__advertising2-text">
+                                    <p class="menu-box__advertising2-text1">new arrival</p>
+                                    <p class="menu-box__advertising2-text2">for</p>
+                                    <p class="menu-box__advertising2-text3">Babies</p>
+                                </div>
+                            </div>
+                            <div class="menu-box__advertising3">
+                                <p class="menu-box__advertising3-text">designer Shoes
+                                </p>
+                            </div>
+                            <div class="menu-box__advertising4">
+                                <div class="menu-box__advertising4-text">
+                                    <p class="menu-box__advertising4-text1">Bags
+                                    <p>
+                                    <p class="menu-box__advertising4-text2">$30</p>
+                                    <p class="menu-box__advertising4-text3">& under</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </nav>
-            <div class="menu-box">
-                <div class="menu-box__item">
-                    <h3 class="menu-box__title">Clothing</h3>
-                    <a class="menu-box__link" href="#">Dresses</a>
-                    <a class="menu-box__link" href="#">Jeans & Trousers</a>
-                    <a class="menu-box__link" href="#">Blouses & Shirts</a>
-                    <a class="menu-box__link" href="#">Tops & T-Shirts</a>
-                    <a class="menu-box__link" href="#">Jackets & Coats</a>
-                    <a class="menu-box__link" href="#">Skirts</a>
-                </div>
-                <div class="menu-box__item">
-                    <h3 class="menu-box__title">Shoes</h3>
-                    <a class="menu-box__link" href="#">Formal Shoes</a>
-                    <a class="menu-box__link" href="#">Casual Shoes</a>
-                    <a class="menu-box__link" href="#">Sandals</a>
-                    <a class="menu-box__link" href="#">Boots</a>
-                    <a class="menu-box__link" href="#">Wide Fit</a>
-                    <a class="menu-box__link" href="#">Slippers</a>
-                </div>
-                <div class="menu-box__item">
-                    <h3 class="menu-box__title">ACCESSORIES</h3>
-                    <a class="menu-box__link" href="#">Bags & Purses</a>
-                    <a class="menu-box__link" href="#">Belts</a>
-                    <a class="menu-box__link" href="#">Gloves</a>
-                    <a class="menu-box__link" href="#">Jewellery</a>
-                    <a class="menu-box__link" href="#">Sunglasses</a>
-                    <a class="menu-box__link" href="#">Hair Accessories</a>
-                </div>
-                <div class="menu-box__item">
-                    <h3 class="menu-box__title">Sports</h3>
-                    <a class="menu-box__link" href="#">Sport Tops & Vests</a>
-                    <a class="menu-box__link" href="#">Hoodies</a>
-                    <a class="menu-box__link" href="#">Swimwear</a>
-                    <a class="menu-box__link" href="#">Footwear</a>
-                    <a class="menu-box__link" href="#">Sports Underwear</a>
-                    <a class="menu-box__link" href="#">Bags</a>
-                </div>
-                <div class="menu-box__advertising1">
-                    <p class="menu-box__advertising1-text">Dresseses <span class="menu-box__advertising1-offer">from
-                            $10</span></p>
-                </div>
-                <div class="menu-box__advertising2">
-                    <div class="menu-box__advertising2-text">
-                        <p class="menu-box__advertising2-text1">new arrival</p>
-                        <p class="menu-box__advertising2-text2">for</p>
-                        <p class="menu-box__advertising2-text3">Babies</p>
-                    </div>
-                </div>
-                <div class="menu-box__advertising3">
-                    <p class="menu-box__advertising3-text">designer Shoes
-                    </p>
-                </div>
-                <div class="menu-box__advertising4">
-                    <div class="menu-box__advertising4-text">
-                        <p class="menu-box__advertising4-text1">Bags
-                        <p>
-                        <p class="menu-box__advertising4-text2">$30</p>
-                        <p class="menu-box__advertising4-text3">& under</p>
-                    </div>
-                </div>
-            </div>
         </div>
+        <details class="navigation center">
+            <summary class="navigation__title">
+                <div class="navigation__nav">
+                    <div class="burger-menu">
+                        <div class="block"></div>
+                        <div class="block"></div>
+                        <div class="block"></div>
+                    </div>
+                    <p>NAVIGATION</p>
+                </div>
+                <div class="navigation__basket">
+                    <a href="#"><img class="navigation__basket-img" src="img/basket.png" alt=""></a>
+                    <p class="navigation__basket-price">$0.00</p>
+                </div>
+            </summary>
+            <div class="navigation-box">
+                <details class="mobile-menu__item">
+                    <summary class="mobile-menu__title">Fashion</summary>
+                    <div class="mobile-menu-box">
+                        <details class="mobile-menu-box__item">
+                            <summary class="mobile-menu-box__title">Clothing</summary>
+                            <div class="mobile-menu-box__item-box">
+                            </div>
+                        </details>
+                        <details class="mobile-menu-box__item">
+                            <summary class="mobile-menu-box__title">Shoes</summary>
+                            <div class="mobile-menu-box__item-box">
+                            </div>
+                        </details>
+                        <details class="mobile-menu-box__item">
+                            <summary class="mobile-menu-box__title">ACCESSORIES</summary>
+                            <div class="mobile-menu-box__item-box">
+                                <a class="mobile-menu-box__link" href="#">Dresses</a>
+                                <a class="mobile-menu-box__link" href="#">Jeans & Trousers</a>
+                            </div>
+                        </details>
+                        <details class="mobile-menu-box__item">
+                            <summary class="mobile-menu-box__title">Sports</summary>
+                            <div class="mobile-menu-box__item-box">
+                            </div>
+                        </details>
+                        <div class="mobile-menu-box__item">
+                            <div class="mobile-menu-box__advertising1">
+                                <p class="mobile-menu-box__advertising1-text">Dresseses <span
+                                        class="mobile-menu-box__advertising1-offer">from
+                                        $10</span></p>
+                            </div>
+                            <div class="mobile-menu-box__advertising2">
+                                <div class="mobile-menu-box__advertising2-text">
+                                    <p class="mobile-menu-box__advertising2-text1">new arrival</p>
+                                    <p class="mobile-menu-box__advertising2-text2">for</p>
+                                    <p class="mobile-menu-box__advertising2-text3">Babies</p>
+                                </div>
+                            </div>
+                            <div class="mobile-menu-box__advertising3">
+                                <p class="mobile-menu-box__advertising3-text">designer Shoes
+                                </p>
+                            </div>
+                            <div class="mobile-menu-box__advertising4">
+                                <div class="mobile-menu-box__advertising4-text">
+                                    <p class="mobile-menu-box__advertising4-text1">Bags
+                                    <p>
+                                    <p class="mobile-menu-box__advertising4-text2">$30</p>
+                                    <p class="mobile-menu-box__advertising4-text3">& under</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="mobile-menu-box__item">
+                            <h3 class="mobile-menu-box__title title2">Shoes</h3>
+                            <a class="mobile-menu-box__link" href="#">Formal Shoes</a>
+                            <a class="mobile-menu-box__link" href="#">Casual Shoes</a>
+                            <a class="mobile-menu-box__link" href="#">Sandals</a>
+                            <a class="mobile-menu-box__link" href="#">Boots</a>
+                            <a class="mobile-menu-box__link" href="#">Wide Fit</a>
+                            <a class="mobile-menu-box__link" href="#">Slippers</a>
+                        </div>
+                        <div class="mobile-menu-box__item">
+                            <h3 class="mobile-menu-box__title title3">ACCESSORIES</h3>
+                            <a class="mobile-menu-box__link" href="#">Bags & Purses</a>
+                            <a class="mobile-menu-box__link" href="#">Belts</a>
+                            <a class="mobile-menu-box__link" href="#">Gloves</a>
+                            <a class="mobile-menu-box__link" href="#">Jewellery</a>
+                            <a class="mobile-menu-box__link" href="#">Sunglasses</a>
+                            <a class="mobile-menu-box__link" href="#">Hair Accessories</a>
+                        </div>
+                        <div class="mobile-menu-box__item">
+                            <h3 class="mobile-menu-box__title title4">Sports</h3>
+                            <a class="mobile-menu-box__link" href="#">Sport Tops & Vests</a>
+                            <a class="mobile-menu-box__link" href="#">Hoodies</a>
+                            <a class="mobile-menu-box__link" href="#">Swimwear</a>
+                            <a class="mobile-menu-box__link" href="#">Footwear</a>
+                            <a class="mobile-menu-box__link" href="#">Sports Underwear</a>
+                            <a class=mobile-menu-box__link" href="#">Bags</a>
+                        </div>
+                        <div class="mobile-menu-box__advertising1">
+                            <p class="mobile-menu-box__advertising1-text">Dresseses <span
+                                    class="mobile-menu-box__advertising1-offer">from
+                                    $10</span></p>
+                        </div>
+                        <div class="mobile-menu-box__advertising2">
+                            <div class="mobile-menu-box__advertising2-text">
+                                <p class="mobile-menu-box__advertising2-text1">new arrival</p>
+                                <p class="mobile-menu-box__advertising2-text2">for</p>
+                                <p class="mobile-menu-box__advertising2-text3">Babies</p>
+                            </div>
+                        </div>
+                        <div class="mobile-menu-box__advertising3">
+                            <p class="mobile-menu-box__advertising3-text">designer Shoes
+                            </p>
+                        </div>
+                        <div class="mobile-menu-box__advertising4">
+                            <div class="mobile-menu-box__advertising4-text">
+                                <p class="mobile-menu-box__advertising4-text1">Bags
+                                <p>
+                                <p class="mobile-menu-box__advertising4-text2">$30</p>
+                                <p class="mobile-menu-box__advertising4-text3">& under</p>
+                            </div>
+                        </div> -->
+                    </div>
+                </details>
+                <details class="mobile-menu__item">
+                    <summary class="mobile-menu__title">Electronics</summary>
+                    <div class="mobile-menu-box">
+
+                    </div>
+                </details>
+                <details class="mobile-menu__item">
+                    <summary class="mobile-menu__title">Gifts</summary>
+                    <div class="mobile-menu-box">
+
+                    </div>
+                </details>
+                <details class="mobile-menu__item">
+                    <summary class="mobile-menu__title">Books</summary>
+                    <div class="mobile-menu-box">
+
+                    </div>
+                </details>
+                <details class="mobile-menu__item">
+                    <summary class="mobile-menu__title">Music</summary>
+                    <div class="mobile-menu-box">
+
+                    </div>
+                </details>
+                <details class="mobile-menu__item">
+                    <summary class="mobile-menu__title">At Home</summary>
+                    <div class="mobile-menu-box">
+
+                    </div>
+                </details>
+                <details class="mobile-menu__item">
+                    <summary class="mobile-menu__title">Sale</summary>
+                    <div class="mobile-menu-box">
+
+                    </div>
+                </details>
+            </div>
+        </details>
     </header>
     <div class="main-content center">
         <div class="main-content__title">
@@ -190,6 +730,14 @@
             <p class="main-content__text36"><a href="#">shop now <img src="img/arrow_right_grey.png" alt=""></a></p>
         </div>
     </div>
+    <div class="main-content-mobile">
+        <div class="main-content-mobile__box">
+            <p class="main-content-mobile__mobile_text1">you pay less</p>
+            <p class="main-content-mobile__mobile_text2">everyone else pays attention.</p>
+            <div class="main-content-mobile__mobile_text3"><a class="main-content-mobile__link" href="#">get your
+                    discount <img src="img/arrow_right_white_small.png" alt=""></a></div>
+        </div>
+    </div>
     <div class="offers">
         <div class="offer-box center">
             <div class="offer-box__item item-1">
@@ -206,8 +754,8 @@
                     <p class="item-2__box-text2">hottest styles</p>
                     <p class="item-2__box-text3">are here</p>
                 </div>
-                <a class="offer-box__link" href="#">watch now<img class="offer-box__arrow"
-                        src="img/arrow_right_white_small.png" alt=""></a>
+                <a class="offer-box__link offer-box__link_item-2-position" href="#">watch now<img
+                        class="offer-box__arrow" src="img/arrow_right_white_small.png" alt=""></a>
             </div>
             <div class="offer-box__item item-3">
                 <p class="item-3__box-text1">jewelry</p>
@@ -221,8 +769,8 @@
                     <p class="item-4__box-text2">women</p>
                     <p class="item-4__box-text3">autumn 2013</p>
                 </div>
-                <a class="offer-box__link" href="#">get the look<img class="offer-box__arrow"
-                        src="img/arrow_right_white_small.png" alt=""></a>
+                <a class="offer-box__link offer-box__link_item-4-position" href="#">get the look<img
+                        class="offer-box__arrow" src="img/arrow_right_white_small.png" alt=""></a>
             </div>
             <div class="offer-box__item item-5">
                 <p class="item-5__box-text1">accessories</p>
@@ -238,14 +786,14 @@
     <div class="new-arrivals">
         <nav class="new-arrivals__header center">
             <ul class="new-arrivals__list">
-                <li><a class="new-arrivals__list-link link1" href="#">new arrivals</a></li>
-                <li><a class="new-arrivals__list-link link2" href="#">Featured</a></li>
-                <li><a class="new-arrivals__list-link link3" href="#">Special</a></li>
-                <li><a class="new-arrivals__list-link link4" href="#">bestsellers</a></li>
+                <li class="new-arrivals__li"><a class="new-arrivals__list-link link1" href="#">new arrivals</a></li>
+                <li class="new-arrivals__li li-2"><a class="new-arrivals__list-link link2" href="#">Featured</a></li>
+                <li class="new-arrivals__li"><a class="new-arrivals__list-link link3" href="#">Special</a></li>
+                <li class="new-arrivals__li"><a class="new-arrivals__list-link link4" href="#">bestsellers</a></li>
             </ul>
         </nav>
         <div class="products center">
-            <div class="products__items">
+            <div class="products__items item1">
                 <div class="products__img">
                     <div class="products__img_color">
                         <div class="black"></div>
@@ -268,7 +816,7 @@
                     <a class="products__add-item add-item2" href="#">+ Add to Compare</a>
                 </div>
             </div>
-            <div class="products__items">
+            <div class="products__items item2">
                 <div class="products__img products__img_disc">
                     <div class="products__img_color">
                         <div class="black"></div>
@@ -292,7 +840,7 @@
                     <a class="products__add-item add-item2" href="#">+ Add to Compare</a>
                 </div>
             </div>
-            <div class="products__items">
+            <div class="products__items item3">
                 <div class="products__img">
                     <div class="products__img_color">
                         <div class="black"></div>
@@ -315,7 +863,7 @@
                     <a class="products__add-item add-item2" href="#">+ Add to Compare</a>
                 </div>
             </div>
-            <div class="products__items">
+            <div class="products__items item4">
                 <div class="products__img products__img_new">
                     <div class="products__img_color">
                         <div class="black"></div>
@@ -338,7 +886,7 @@
                     <a class="products__add-item add-item2" href="#">+ Add to Compare</a>
                 </div>
             </div>
-            <div class="products__items">
+            <div class="products__items item5">
                 <div class="products__img">
                     <div class="products__img_color">
                         <div class="black"></div>
@@ -361,7 +909,7 @@
                     <a class="products__add-item add-item2" href="#">+ Add to Compare</a>
                 </div>
             </div>
-            <div class="products__items">
+            <div class="products__items item6">
                 <div class="products__img">
                     <div class="products__img_color">
                         <div class="black"></div>
@@ -384,7 +932,7 @@
                     <a class="products__add-item add-item2" href="#">+ Add to Compare</a>
                 </div>
             </div>
-            <div class="products__items">
+            <div class="products__items item7">
                 <div class="products__img products__img_out">
                     <div class="products__img_color">
                         <div class="black"></div>
@@ -408,7 +956,7 @@
                     <a class="products__add-item add-item2" href="#">+ Add to Compare</a>
                 </div>
             </div>
-            <div class="products__items">
+            <div class="products__items item8">
                 <div class="products__img">
                     <div class="products__img_color">
                         <div class="black"></div>
@@ -444,11 +992,10 @@
                     <div class="about__info">
                         <div class="about__img"></div>
                         <div class="about__description">
-                            <p class="about__text">Morbi pretium odio in dapibus varius. Integer sagittis, tellus ac
+                            <p class="about__text">Morbi pretium odio in dapibus varius. Integer sagittis, tellus
                                 venenatis venenatis, ipsum ligula auctor lectus, suscipit velit quam quis turpis. Fusce
                                 scelerisque aliquet commodo. Sed lobortis laoreet risus vitae tincidunt. Ut consectetur
-                                nec
-                                purus in egestas. Pellentesque vehicula urna purus. </p>
+                                nec purus in egestas. Pellentesque vehicula urna purus. </p>
                             <a class="link" href="#">Read more <img class="arrow" src="img/arrow_right_grey.png"
                                     alt=""></a>
                         </div>
@@ -490,7 +1037,10 @@
                         </form>
                     </div>
                 </section>
-                <input class="email" type="email" placeholder="Enter your e-mail for stay in the know" required>
+                <input class="email email-size974" type="email" placeholder="Enter your e-mail for stay in the know"
+                    required>
+                <input class="email email-size724" type="email" placeholder="Enter your e-mail" required>
+
             </div>
             <div class="footer-column2">
                 <section class="favorite">
@@ -517,23 +1067,131 @@
                             </div>
                         </div>
                     </div>
-    
+
                 </section>
                 <section class="twitter">
                     <div class="twitter__top">
-                        <h3 class="twitter__title">Most favorite</h3>
+                        <h3 class="twitter__title">Twitter</h3>
                         <a class="twitter__follow" href="#">Follow</a>
                     </div>
-                    <div class="comment">
-                        <img src="img/logo_twit.png" alt="">
-                        <h3>Promokit</h3>
-                        <p>@marek_mnishek</p>
-                    </div>
-                    
+                    <div class="comment comment1">
+                        <div class="comment__top">
+                            <img class="comment__logo" src="img/logo_twit.png" alt="">
+                            <div class="comment__name">
+                                <h3 class="comment__title">Promokit</h3>
+                                <p class="comment__nickname">@marek_mnishek</p>
+                            </div>
+                        </div>
+                        <p class="comment__text">Vivamus id quam quis velit semper adipiscing nec in libero. Praesent
+                            quis lectus at justo ornare laoreet. Proin luctus viverra <a class="comment__link"
+                                href="#">bit.ly/1byZ6QM</a></p>
+                        <div class="comment__other">
+                            <p class="comment__date">9 October 2013</p>
+                            <div class="comment__feedback">
+                                <div class="reply">
+                                    <img src="img/reply.png" alt="">
+                                    <p class="comment__feedback-item">Reply</p>
+                                </div>
+                                <div class="share">
+                                    <img src="img/share.png" alt="">
+                                    <p class="comment__feedback-item">Retweet</p>
+                                </div>
 
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="comment comment2">
+                        <div class="comment__top">
+                            <img class="comment__logo" src="img/logo_twit.png" alt="">
+                            <div class="comment__name">
+                                <h3 class="comment__title">Promokit</h3>
+                                <p class="comment__nickname">@marek_mnishek</p>
+                            </div>
+                        </div>
+                        <p class="comment__text">We’ve just finished and released our new eCommerce PSD template
+                            "Venedor" More details here: <a class="comment__link" href="#">bit.ly/19SYsM6</a></p>
+                        <div class="comment__other">
+                            <p class="comment__date">28 October 2013</p>
+                            <div class="comment__feedback">
+                                <div class="reply">
+                                    <img src="img/reply.png" alt="">
+                                    <p class="comment__feedback-item">Reply</p>
+                                </div>
+                                <div class="share">
+                                    <img src="img/share.png" alt="">
+                                    <p class="comment__feedback-item">Retweet</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+                <section class="facebook">
+                    <div class="facebook__top">
+                        <h3 class="facebook__title">facebook</h3>
+                        <a class="facebook__follow" href="#">LIKE</a>
+                    </div>
+                    <p class="facebook__text">1452 people like <a class="facebook__promo" href="#">PromoKit</a></p>
+                    <div class="facebook__items">
+                        <div class="facebook__img img1"></div>
+                        <div class="facebook__img img2"></div>
+                        <div class="facebook__img img3"></div>
+                        <div class="facebook__img img4"></div>
+                        <div class="facebook__img img5"></div>
+                        <div class="facebook__img img6"></div>
+                        <div class="facebook__img img7"></div>
+                        <div class="facebook__img img8"></div>
+                    </div>
                 </section>
             </div>
-            <div class="footer-column3"></div>
+            <div class="footer-column3">
+                <div class="information information_position">
+                    <h3 class="information__title">INFORMATION</h3>
+                    <ul>
+                        <li><a class="information__link" href="#">New products</a></li>
+                        <li><a class="information__link" href="#">Top sellers</a></li>
+                        <li><a class="information__link" href="#">Specials products</a></li>
+                        <li><a class="information__link" href="#">Manufacturers</a></li>
+                        <li><a class="information__link" href="#">Suppliers</a></li>
+                        <li><a class="information__link" href="#">Our stores</a></li>
+                    </ul>
+                </div>
+                <div class="account">
+                    <h3 class="account__title">MY ACCOUNT</h3>
+                    <ul>
+                        <li><a class="account__link" href="#">My account</a></li>
+                        <li><a class="account__link" href="#">Personal information</a></li>
+                        <li><a class="account__link" href="#">Addresses</a></li>
+                        <li><a class="account__link" href="#">Discount</a></li>
+                        <li><a class="account__link" href="#">Orders history</a></li>
+                        <li><a class="account__link" href="#">Your Vouchers</a></li>
+                    </ul>
+                </div>
+                <div class="service">
+                    <h3 class="service__title">CUSTOMER SERVICE</h3>
+                    <ul>
+                        <li><a class="service__link" href="#">Help & contact</a></li>
+                        <li><a class="service__link" href="#">Shipping & taxes</a></li>
+                        <li><a class="service__link" href="#">Return policy</a></li>
+                        <li><a class="service__link" href="#">Careers</a></li>
+                        <li><a class="service__link" href="#">Affiliates</a></li>
+                        <li><a class="service__link" href="#">Legal Notice</a></li>
+                    </ul>
+                </div>
+                <div class="contact contact_border">
+                    <h3 class="contact__title">CONTACT INFO</h3>
+                    <ul>
+                        <li><a class="contact__link" href="#">Vigo Shop Ltd</a></li>
+                        <li><a class="contact__link" href="#">United Kingdom</a></li>
+                        <li><a class="contact__link" href="#">London 02587</a></li>
+                        <li><a class="contact__link" href="#">Oxford Street 48/188</a></li>
+                        <li><a class="contact__link" href="#">Working days: Mon. - Sun.</a></li>
+                        <li><a class="contact__link last" href="#">Working hours: 9 AM - 8 PM</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
         <div class="footer-bottom center">
             <div class="left-part">
@@ -559,7 +1217,9 @@
                 <a class="social__box mail-icon" href="#"><img class="social__img" src="img/mail.png" alt=""></a>
             </div>
         </div>
+        <a class="up" href="#logo"><img src="img/arrow_up_button.png" alt=""></a>
     </footer>
+
 </body>
 
 </html>
